@@ -1,0 +1,74 @@
+# SCHEMA README:
+# - use singular form for map container, where order doesn't matter
+# - use plural form for array container, where order matters
+axg-101: # arbitary app-id
+  config: #app/keyword. app configuration
+    title: Appxigon 101 Talk Slides
+    version: 0.1.0
+    vars: # arbitary app wide variables container
+    data: # keyword. Defineds shared data sources
+    class: # keyword. Default CSS class names for components
+      appxigon: container
+      view:
+      group:
+      item:
+    default: slide-cover #view/keyword. default view-id
+    layout: #views/attribute. ordered views as top level template
+      - header
+      - _view #special keyword. Placeholder of the dynamic view
+      - footer
+
+  slide-cover: # view-id (arbitary)
+    config: #view/config
+      title: #view/config/attribute. Defaults to "Slide Cover" (from id)
+      layout: [ main, footnote ]
+    main: # arbitary group-id
+      - content: #appxigon item-id
+          type: display/md #appxigon item-type/sub-type
+          data:
+            uri: .get-mark-down
+            params:
+              src: slide-cover.md
+    footnote: # arbitary group-id
+      - content:
+          type: display/md
+          data:
+            uri: .get-mark-down
+            params:
+              src: slide-cover-footnote.md
+
+  slide-intro:
+    config: #view/config
+      layout: [ main, footnote ]
+
+  slide-intro-roger:
+
+  slide-intro-siegfried:
+
+  slide-intro-less-is-more:
+
+  slide-problem:
+
+  slide-proposal:
+
+  slide-future:
+
+  slide-conclusion:
+
+  feedback: # view-id
+    config: #view/config
+      title: #view/config/attribute
+      layout: #view/config/attribute
+        - main
+        - misc
+    main: # arbitary group-id
+      - audience-feedback-input:
+          type: emoji-input # custom item-type
+      - audience-feedback-display:
+          type: emoji-display # custom item-type
+    misc: # arbitary group-id
+      - statistics :
+          type: display/md
+
+  header: # view-id 'header' specified as in view.template
+  footer: # view-id 'footer' specified as in view.template

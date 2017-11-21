@@ -1,0 +1,102 @@
+{
+  "axg-101": {
+    "config": {
+      "title": "Appxigon 101 Talk Slides",
+      "version": "0.1.0",
+      "vars": null,
+      "data": null,
+      "class": {
+        "appxigon": "container",
+        "view": null,
+        "group": null,
+        "item": null
+      },
+      "default": "slide-cover",
+      "layout": [
+        "header",
+        "_view",
+        "footer"
+      ]
+    },
+    "slide-cover": {
+      "config": {
+        "title": null,
+        "layout": [
+          "main",
+          "footnote"
+        ]
+      },
+      "main": [
+        {
+          "content": {
+            "type": "display/md",
+            "data": {
+              "uri": ".get-mark-down",
+              "params": {
+                "src": "slide-cover.md"
+              }
+            }
+          }
+        }
+      ],
+      "footnote": [
+        {
+          "content": {
+            "type": "display/md",
+            "data": {
+              "uri": ".get-mark-down",
+              "params": {
+                "src": "slide-cover-footnote.md"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "slide-intro": {
+      "config": {
+        "layout": [
+          "main",
+          "footnote"
+        ]
+      }
+    },
+    "slide-intro-roger": null,
+    "slide-intro-siegfried": null,
+    "slide-intro-less-is-more": null,
+    "slide-problem": null,
+    "slide-proposal": null,
+    "slide-future": null,
+    "slide-conclusion": null,
+    "feedback": {
+      "config": {
+        "title": null,
+        "layout": [
+          "main",
+          "misc"
+        ]
+      },
+      "main": [
+        {
+          "audience-feedback-input": {
+            "type": "emoji-input"
+          }
+        },
+        {
+          "audience-feedback-display": {
+            "type": "emoji-display"
+          }
+        }
+      ],
+      "misc": [
+        {
+          "statistics": {
+            "type": "display/md"
+          }
+        }
+      ]
+    },
+    "header": null,
+    "footer": null
+  }
+}

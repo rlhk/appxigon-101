@@ -8,9 +8,15 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all --parallel watch-yaml start-create-react-app",
+    "start-create-react-app": "react-scripts start",
     "build": "react-scripts build",
+    "watch-yaml": "yaml2json ./src/schema/ -p -s -r -w",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2",
+    "yamljs": "^0.3.0"
   }
 }
