@@ -61,6 +61,7 @@
         "title": null,
         "layout": [
           "main",
+          "speakers",
           "footnote"
         ]
       },
@@ -69,6 +70,24 @@
           "content": {
             "type": "display",
             "content": "Less is more:\n============\nBeyond Technical Frameworks\n"
+          }
+        },
+        {
+          "speakers": {
+            "type": "select/list",
+            "title": "Speakers",
+            "data": {
+              "default": [
+                {
+                  "value": "roger",
+                  "text": "Roger LAM"
+                },
+                {
+                  "value": "siegfried",
+                  "text": "Siegfried GRIMBEEK"
+                }
+              ]
+            }
           }
         }
       ],
@@ -134,6 +153,12 @@
           "content": {
             "type": "display",
             "content": "What to expect:\n============\nBeyond Technical Frameworks\n"
+          }
+        },
+        {
+          "supplementary": {
+            "type": "display",
+            "content": "Yada yada...\n----------\nBeyond the horizon ...\n"
           }
         }
       ],
