@@ -12,15 +12,21 @@
     "react-dom": "^16.1.1",
     "react-redux": "^5.0.4",
     "react-router": "^3.0.2",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "npm-run-all": "^4.1.2",
+    "react-flight": "^1.0.2",
+    "sanitize.css": "^5.0.0",
+    "stylus": "^0.54.5"
   },
   "scripts": {
-    "start": "npm-run-all --parallel watch-yaml start-create-react-app",
+    "start": "npm-run-all --parallel watch-yaml watch-css start-create-react-app",
     "start-create-react-app": "react-scripts start",
     "build": "react-scripts build",
     "watch-yaml": "yaml2json ./src/schema/ -p -s -r -w",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "css": "stylus src/css/style.styl",
+    "watch-css": "stylus -w src/css/style.styl"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.2",

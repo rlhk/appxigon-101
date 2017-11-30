@@ -6,8 +6,9 @@ import { Provider } from "react-redux"
 import { Appxigon, configStore, utils } from 'appxigon'
 import * as customAxgFunctions from './appxigon-functions'
 
-import './App.css'
-import './style/custom.css'
+//Import css
+import 'sanitize.css';
+import './css/style.css';
 
 import AppxigonLogo from './component/appxigon-logo'
 
