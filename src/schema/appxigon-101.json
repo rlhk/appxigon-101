@@ -61,41 +61,21 @@
         "title": null,
         "layout": [
           "main",
-          "speakers",
-          "footnote"
+          "speakers"
         ]
       },
       "main": [
         {
-          "content": {
+          "logo": {
             "type": "display",
-            "content": "Less is more:\n============\nBeyond Technical Frameworks\n"
+            "value": "div",
+            "class": "logo"
           }
         },
         {
-          "speakers": {
-            "type": "select/list",
-            "title": "Speakers",
-            "data": {
-              "default": [
-                {
-                  "value": "roger",
-                  "text": "Roger LAM"
-                },
-                {
-                  "value": "siegfried",
-                  "text": "Siegfried GRIMBEEK"
-                }
-              ]
-            }
-          }
-        }
-      ],
-      "footnote": [
-        {
           "content": {
             "type": "display",
-            "content": "Some footnote here...\n"
+            "content": "Less is more\n============\nBeyond Technical Frameworks\n"
           }
         }
       ]

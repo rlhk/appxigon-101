@@ -3,55 +3,57 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
-section.slide {
+.axg-app {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
 }
-section.slide .logo {
-  width: 200px;
+.axg-app .axg-view {
+  background: #05cc98;
+  padding: 0px 20px;
+  min-width: 1200px;
+  min-height: 800px;
 }
-section.slide .slide-overlay {
-  background-color: #109f7a;
-  position: absolute;
-  opacity: 0.8;
-  height: 100vh;
-  width: 100vw;
-  z-index: 1;
-}
-section.slide.introduction {
-  background-image: url("../img/introduction.jpeg");
-  background-position: top right;
-  background-repeat: no-repeat;
+.axg-app .axg-view#slide-cover {
+  background-image: url("../img/introduction.png");
   background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
 }
-section.slide.introduction h1 {
+.axg-app .axg-view#slide-cover .axg-group {
+  display: flex;
+}
+.axg-app .axg-view#slide-cover .axg-group .logo {
+  background-image: url("../img/logo.png");
+  background-size: 200px;
+  background-position: center left;
+  font-size: 0;
+  width: 250px;
+  height: 150px;
+  border-right: 5px solid #fff;
+  padding-right: 50px;
+  margin-right: 50px;
+}
+.axg-app .axg-view#slide-cover .axg-group h1 {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 5px;
   letter-spacing: 1px;
   font-size: 48px;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 1px rgba(0,0,0,0);
+  text-transform: uppercase;
 }
-section.slide.introduction h2 {
+.axg-app .axg-view#slide-cover .axg-group h2 {
   margin-top: 0;
   font-size: 40px;
   letter-spacing: 1px;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 1px rgba(0,0,0,0);
 }
-section.slide.introduction .slide-title {
-  display: flex;
-  align-items: center;
-}
-section.slide.introduction .slide-title .left-content {
-  border-right: 5px solid #fff;
-  padding-right: 50px;
-}
-section.slide.introduction .slide-title .right-content {
-  padding-left: 50px;
-  color: #fff;
-}
-section.slide .slide-content {
-  z-index: 2;
+.axg-app .axg-view#slide-cover .axg-group p {
+  margin-top: 0;
+  font-size: 20px;
+  text-transform: uppercase;
 }

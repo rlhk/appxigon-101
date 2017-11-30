@@ -49,29 +49,18 @@ axg-101: # arbitary app-id
   slide-cover: # view-id (arbitary)
     config: #view/config
       title: #view/config/attribute. Defaults to "Slide Cover" (from id)
-      layout: [ main, speakers, footnote ]
+      layout: [ main, speakers ]
     main: # arbitary group-id
+      - logo:
+          type: display
+          value: div
+          class: logo
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
-            Less is more:
+            Less is more
             ============
             Beyond Technical Frameworks
-      - speakers:
-          type: select/list
-          title: Speakers
-          data:
-            default:
-              - value: roger
-                text:  Roger LAM
-              - value: siegfried
-                text:  Siegfried GRIMBEEK
-    footnote: # arbitary group-id
-      - content:
-          type: display
-          content: |
-            Some footnote here...
-
   slide-speakers:
     config: #view/config
       layout: [ main, footnote ]
