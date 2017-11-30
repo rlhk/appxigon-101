@@ -1,4 +1,7 @@
 {
+  "config": {
+    "default": "axg-101"
+  },
   "axg-101": {
     "config": {
       "title": "Appxigon 101 Talk Slides",
@@ -14,9 +17,44 @@
       "default": "slide-cover",
       "layout": [
         "header",
-        "_view",
+        "_main",
         "footer"
-      ]
+      ],
+      "signal": {
+        "Enter": {
+          "uri": ".nextView",
+          "params": {
+            "step": 1,
+            "views": [
+              "slide-cover",
+              "slide-speakers",
+              "slide-intro"
+            ]
+          }
+        },
+        "ArrowRight": {
+          "uri": ".nextView",
+          "params": {
+            "step": 1,
+            "views": [
+              "slide-cover",
+              "slide-speakers",
+              "slide-intro"
+            ]
+          }
+        },
+        "ArrowLeft": {
+          "uri": ".nextView",
+          "params": {
+            "step": -1,
+            "views": [
+              "slide-cover",
+              "slide-speakers",
+              "slide-intro"
+            ]
+          }
+        }
+      }
     },
     "slide-cover": {
       "config": {
@@ -29,12 +67,48 @@
       "main": [
         {
           "content": {
-            "type": "display/md",
+            "type": "display",
+            "content": "Less is more:\n============\nBeyond Technical Frameworks\n"
+          }
+        }
+      ],
+      "footnote": [
+        {
+          "content": {
+            "type": "display",
+            "content": "Some footnote here...\n"
+          }
+        }
+      ]
+    },
+    "slide-speakers": {
+      "config": {
+        "layout": [
+          "main",
+          "footnote"
+        ]
+      },
+      "main": [
+        {
+          "content": {
+            "type": "display",
+            "content": "Who are we?\n============\n"
+          }
+        },
+        {
+          "speakers": {
+            "type": "select/list",
             "data": {
-              "uri": ".get-mark-down",
-              "params": {
-                "src": "slide-cover.md"
-              }
+              "default": [
+                {
+                  "value": "roger",
+                  "text": "Roger LAM"
+                },
+                {
+                  "value": "siegfried",
+                  "text": "Siegfried GRIMBEEK"
+                }
+              ]
             }
           }
         }
@@ -42,13 +116,8 @@
       "footnote": [
         {
           "content": {
-            "type": "display/md",
-            "data": {
-              "uri": ".get-mark-down",
-              "params": {
-                "src": "slide-cover-footnote.md"
-              }
-            }
+            "type": "display",
+            "content": "Some footnote here...\n"
           }
         }
       ]
@@ -59,10 +128,24 @@
           "main",
           "footnote"
         ]
-      }
+      },
+      "main": [
+        {
+          "content": {
+            "type": "display",
+            "content": "What to expect:\n============\nBeyond Technical Frameworks\n"
+          }
+        }
+      ],
+      "footnote": [
+        {
+          "content": {
+            "type": "display",
+            "content": "Some footnote here...\n"
+          }
+        }
+      ]
     },
-    "slide-intro-roger": null,
-    "slide-intro-siegfried": null,
     "slide-intro-less-is-more": null,
     "slide-problem": null,
     "slide-proposal": null,
@@ -91,7 +174,7 @@
       "misc": [
         {
           "statistics": {
-            "type": "display/md"
+            "type": "display"
           }
         }
       ]

@@ -1,0 +1,21 @@
+{
+  "world" : "世界",
+  "last-name" : "姓",
+  "first-name" : "名",
+  "full-name" : "全名",
+  "hell" : "地獄",
+  "email" : "電郵",
+  "address-1" : "地址一",
+  "address-2" : "地址二",
+  "switch" : "轉換",
+  "switch-to-main-schema" : "切換至主應用",
+  "switch-to-alt-schema" : "切換至其他應用",
+  "next" : "繼續",
+  "back" : "返回",
+  "fill-info" : "填上資料",
+  "back-to-landing" : "回到首頁",
+  "send-to" : "送往",
+  "select-post" : "選擇貼子",
+  "confirm" : "確認",
+  "confirm-your-decision" : "請確認決定！"
+}

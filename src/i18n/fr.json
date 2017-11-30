@@ -1,0 +1,21 @@
+{
+  "world" : "Monde",
+  "last-name" : "Nom de famille",
+  "first-name" : "Prénom",
+  "full-name" : "Nom complet",
+  "hell" : "Enfer",
+  "email" : "Email",
+  "address-1" : "Adresse 1",
+  "address-2" : "Adresse 2",
+  "switch" : "Commutateur",
+  "switch-to-main-schema" : "Passer à l'application Principale",
+  "switch-to-alt-schema" : "Passer à une autre Application",
+  "next" : "Prochain",
+  "back" : "Arrière",
+  "fill-info" : "Informations de remplissage",
+  "back-to-landing" : "Retour à l'atterrissage",
+  "send-to" : "Envoyer à",
+  "select-post" : "Sélectionnez un message",
+  "confirm" : "Confirmer",
+  "confirm-your-decision" : "S'il vous plaît confirmer votre décision!"
+}

@@ -1,0 +1,21 @@
+{
+  "world" : "World",
+  "last-name" : "Last Name",
+  "first-name" : "First Name",
+  "full-name" : "Full Name",
+  "hell" : "Hell",
+  "email" : "Email",
+  "address-1" : "Address 1",
+  "address-2" : "Address 2",
+  "switch" : "Switch",
+  "switch-to-main-schema" : "Switch to Main App",
+  "switch-to-alt-schema" : "Switch to Another App",
+  "next" : "Next",
+  "back" : "Back",
+  "fill-info" : "Fill Information",
+  "back-to-landing" : "Back to Landing",
+  "send-to" : "Send To",
+  "select-post" : "Select a Post",
+  "confirm" : "Confirm",
+  "confirm-your-decision" : "Please confirm your decision!"
+}

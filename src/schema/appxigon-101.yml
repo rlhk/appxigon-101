@@ -1,6 +1,9 @@
 # SCHEMA README:
 # - use singular form for map container, where order doesn't matter
 # - use plural form for array container, where order matters
+config:
+  default: axg-101
+
 axg-101: # arbitary app-id
   config: #app/keyword. app configuration
     title: Appxigon 101 Talk Slides
@@ -15,8 +18,33 @@ axg-101: # arbitary app-id
     default: slide-cover #view/keyword. default view-id
     layout: #views/attribute. ordered views as top level template
       - header
-      - _view #special keyword. Placeholder of the dynamic view
+      - _main #special keyword. Placeholder of the dynamic view
       - footer
+    signal: #keyword/app. app level signal handling
+      Enter: # standard DOM key name
+        uri: .nextView
+        params:
+          step: 1
+          views:
+            - slide-cover
+            - slide-speakers
+            - slide-intro
+      ArrowRight: # standard DOM key name
+        uri: .nextView
+        params:
+          step: 1
+          views:
+            - slide-cover
+            - slide-speakers
+            - slide-intro
+      ArrowLeft:
+        uri: .nextView
+        params:
+          step: -1
+          views:
+            - slide-cover
+            - slide-speakers
+            - slide-intro
 
   slide-cover: # view-id (arbitary)
     config: #view/config
@@ -24,26 +52,55 @@ axg-101: # arbitary app-id
       layout: [ main, footnote ]
     main: # arbitary group-id
       - content: #appxigon item-id
-          type: display/md #appxigon item-type/sub-type
-          data:
-            uri: .get-mark-down
-            params:
-              src: slide-cover.md
+          type: display #appxigon item-type/sub-type
+          content: |
+            Less is more:
+            ============
+            Beyond Technical Frameworks
     footnote: # arbitary group-id
       - content:
-          type: display/md
+          type: display
+          content: |
+            Some footnote here...
+
+  slide-speakers:
+    config: #view/config
+      layout: [ main, footnote ]
+    main: # arbitary group-id
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Who are we?
+            ============
+      - speakers:
+          type: select/list
           data:
-            uri: .get-mark-down
-            params:
-              src: slide-cover-footnote.md
+            default:
+              - value: roger
+                text:  Roger LAM
+              - value: siegfried
+                text:  Siegfried GRIMBEEK
+    footnote: # arbitary group-id
+      - content:
+          type: display
+          content: |
+            Some footnote here...
 
   slide-intro:
     config: #view/config
       layout: [ main, footnote ]
-
-  slide-intro-roger:
-
-  slide-intro-siegfried:
+    main: # arbitary group-id
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            What to expect:
+            ============
+            Beyond Technical Frameworks
+    footnote: # arbitary group-id
+      - content:
+          type: display
+          content: |
+            Some footnote here...
 
   slide-intro-less-is-more:
 
@@ -68,7 +125,7 @@ axg-101: # arbitary app-id
           type: emoji-display # custom item-type
     misc: # arbitary group-id
       - statistics :
-          type: display/md
+          type: display
 
   header: # view-id 'header' specified as in view.template
   footer: # view-id 'footer' specified as in view.template
