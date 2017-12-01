@@ -66,3 +66,16 @@ export function nextView(params, ctx) {
     ctx.actions.axgSetViewId(`${appId}/${nextView}`)
   }
 }
+
+export function transitClass(params, ctx) {
+  let name = get(params, 'name', 'dummy')
+  let timeout = get(params, 'timeout', 0)
+  let e = get(document.getElementsByClassName('axg-app'), 0)
+  if (e) {
+    e.classList.add(name)
+    setTimeout(
+      () => e.classList.remove(name),
+      timeout
+    )
+  }
+}

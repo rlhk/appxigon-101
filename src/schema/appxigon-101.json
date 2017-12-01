@@ -54,6 +54,19 @@
             ]
           }
         }
+      },
+      "view": {
+        "actions": [
+          {
+            "call": {
+              "uri": ".transitClass",
+              "params": {
+                "name": "view-transition-effect",
+                "timeout": 2000
+              }
+            }
+          }
+        ]
       }
     },
     "slide-cover": {
@@ -177,7 +190,26 @@
         }
       ]
     },
-    "header": null,
-    "footer": null
+    "header": {
+      "footer": null,
+      "config": {
+        "class": "custom-footer-view",
+        "layout": [
+          "default"
+        ]
+      },
+      "default": [
+        {
+          "config": {
+            "class": "custom-footer-group"
+          }
+        },
+        {
+          "logo": {
+            "type": "response-form"
+          }
+        }
+      ]
+    }
   }
 }

@@ -21,6 +21,7 @@ import zh from './i18n/zh.json'
 
 const store = configStore(browserHistory)
 Appxigon.addItemType('appxigon-logo', AppxigonLogo)
+Appxigon.addItemType('response-form', Form)
 
 Appxigon.addFunctions(customAxgFunctions)
 Appxigon.addNativeState('history', hashHistory)

@@ -33,6 +33,16 @@ body
       text-shadow textShadow
       text-transform uppercase
       color white
+    &#header
+      position fixed
+      height 0px
+      bottom 0
+      left 0
+      right 0
+      .effect-container
+        left 0
+        position absolute
+        width 100%
     &#slide-cover
       background-image url('../img/introduction.png')
       background-size cover
@@ -106,7 +116,49 @@ body
                 &:after
                   content:'With 16 years of experience in software development, Roger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.'
 
+.emoji-form
+  display flex
+  align-items center
+  justify-content center
+  height 100vh
+  width 100%
+  opacity 0.5
+  transition: all 0.4s ease-in
+  padding 5%
+  .emoji
+    display inline-block
+    img
+      max-width 100%
+  &.visible
+    opacity 1
+    cursor pointer
 
+ @keyframes fadeOut {
+    0% {opacity: 1; transform:translateY(0px)}
+    100% {opacity: 0;transform:translateY(-90vh)}
+ }
+
+.emoji-effect
+  position absolute
+  bottom 0
+  width 100%
+  .emoji-row
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transform:translateY(128px)
+    .emoji
+      display: block;
+      flex-shrink: 0; /* and here! */
+      max-width 70px
+      img
+        max-width 100%
+      &.active
+        animation-name fadeOut
+        animation-iteration-count 1
+        animation-fill-mode: forwards
+        transition: all 0.3s ease-in
   // .logo
   //   width 200px
   // .slide-overlay

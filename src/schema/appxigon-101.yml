@@ -45,7 +45,13 @@ axg-101: # arbitary app-id
             - slide-cover
             - slide-speakers
             - slide-intro
-
+    view: # configurations applicable to all views
+          actions:
+            - call:
+                uri: .transitClass
+                params:
+                  name: view-transition-effect
+                  timeout: 2000 # ms
   slide-cover: # view-id (arbitary)
     config: #view/config
       title: #view/config/attribute. Defaults to "Slide Cover" (from id)
@@ -128,4 +134,13 @@ axg-101: # arbitary app-id
           type: display
 
   header: # view-id 'header' specified as in view.template
-  footer: # view-id 'footer' specified as in view.template
+    footer: #axg-word/view. footer view to be rendered last
+    config:
+      class: custom-footer-view #overwrites default class of 'view'
+      layout:
+        - default
+    default: # Here 'default' is just an arbitary group id. items should be contained in group id
+      - config:
+          class: 'custom-footer-group' # special item to indicate custom class if items are indicated as array
+      - logo:
+          type: response-form

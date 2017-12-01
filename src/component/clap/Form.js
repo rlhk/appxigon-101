@@ -105,20 +105,6 @@ class Form extends Component {
 
     return (
       <div className="main-container">
-        <div className={"emoji-form " + visible}>
-          {
-            emoticons.map((emoti, index) => {
-             return(
-               <Emoji
-                 key={index}
-                 icon={emoti.img}
-                 onClick={this.handleOnClick}
-                 name={emoti.name}
-                />
-               )
-            })
-          }
-        </div>
         <div className="effect-container">
           {
             this.state.effectsArray.map((effect, index) => {
