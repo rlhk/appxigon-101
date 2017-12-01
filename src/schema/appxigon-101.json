@@ -28,6 +28,7 @@
             "views": [
               "slide-cover",
               "slide-speakers",
+              "slide-current-project",
               "slide-intro"
             ]
           }
@@ -39,6 +40,7 @@
             "views": [
               "slide-cover",
               "slide-speakers",
+              "slide-current-project",
               "slide-intro"
             ]
           }
@@ -50,6 +52,7 @@
             "views": [
               "slide-cover",
               "slide-speakers",
+              "slide-current-project",
               "slide-intro"
             ]
           }
@@ -62,7 +65,7 @@
               "uri": ".transitClass",
               "params": {
                 "name": "view-transition-effect",
-                "timeout": 2000
+                "timeout": 1000
               }
             }
           }
@@ -127,32 +130,50 @@
         }
       ]
     },
-    "slide-intro": {
+    "slide-current-project": {
       "config": {
         "layout": [
           "main",
-          "footnote"
+          "sidepic"
         ]
       },
       "main": [
         {
           "content": {
             "type": "display",
-            "content": "What to expect:\n============\nBeyond Technical Frameworks\n"
-          }
-        },
-        {
-          "supplementary": {
-            "type": "display",
-            "content": "Yada yada...\n----------\nBeyond the horizon ...\n"
+            "content": "Our current project:\n============\nDisruptive SaaS Business Information System\n----------\n  * REA (Accounting)\n  * DMS\n\nCool Technical Stack\n----------\n  * Clojure (server)\n  * ClojureScript (client)\n  * Datomic (Database)\n\nWe are hiring!\n----------\n  * Are you a dynamic self starter?\n  * Join us now!\n"
           }
         }
       ],
-      "footnote": [
+      "sidepic": [
         {
           "content": {
             "type": "display",
-            "content": "Some footnote here...\n"
+            "value": "div"
+          }
+        }
+      ]
+    },
+    "slide-intro": {
+      "config": {
+        "layout": [
+          "main",
+          "sidepic"
+        ]
+      },
+      "main": [
+        {
+          "content": {
+            "type": "display",
+            "content": "Scope:\n============\n  * General application\n  * Front end / UI\n\nWhat to expect?\n============\n  * Ideas, probably new\n  * Technical implementation detail sharing and discussion\n  * A bit high level principles if technical detail is too much\n  * Some fun\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]

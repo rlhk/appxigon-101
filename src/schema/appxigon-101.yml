@@ -28,6 +28,7 @@ axg-101: # arbitary app-id
           views:
             - slide-cover
             - slide-speakers
+            - slide-current-project
             - slide-intro
       ArrowRight: # standard DOM key name
         uri: .nextView
@@ -36,6 +37,7 @@ axg-101: # arbitary app-id
           views:
             - slide-cover
             - slide-speakers
+            - slide-current-project
             - slide-intro
       ArrowLeft:
         uri: .nextView
@@ -44,6 +46,7 @@ axg-101: # arbitary app-id
           views:
             - slide-cover
             - slide-speakers
+            - slide-current-project
             - slide-intro
     view: # configurations applicable to all views
           actions:
@@ -51,7 +54,7 @@ axg-101: # arbitary app-id
                 uri: .transitClass
                 params:
                   name: view-transition-effect
-                  timeout: 2000 # ms
+                  timeout: 1000 # ms
   slide-cover: # view-id (arbitary)
     config: #view/config
       title: #view/config/attribute. Defaults to "Slide Cover" (from id)
@@ -85,28 +88,58 @@ axg-101: # arbitary app-id
                 text:  Roger LAM
               - value: siegfried
                 text:  Siegfried GRIMBEEK
-
-  slide-intro:
+  slide-current-project:
     config: #view/config
-      layout: [ main, footnote ]
+      layout: [ main, sidepic ]
     main: # arbitary group-id
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
-            What to expect:
+            Our current project:
             ============
-            Beyond Technical Frameworks
-      - supplementary: #appxigon item-id
-          type: display #appxigon item-type/sub-type
-          content: |
-            Yada yada...
+            Disruptive SaaS Business Information System
             ----------
-            Beyond the horizon ...
-    footnote: # arbitary group-id
+              * REA (Accounting)
+              * DMS
+
+            Cool Technical Stack
+            ----------
+              * Clojure (server)
+              * ClojureScript (client)
+              * Datomic (Database)
+
+            We are hiring!
+            ----------
+              * Are you a dynamic self starter?
+              * Join us now!
+    sidepic: # arbitary group-id
       - content:
           type: display
+          value: div
+  slide-intro:
+    config: #view/config
+      layout: [ main, sidepic ]
+    main: # arbitary group-id
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
           content: |
-            Some footnote here...
+            Scope:
+            ============
+              * General application
+              * Front end / UI
+
+            What to expect?
+            ============
+              * Ideas, probably new
+              * Technical implementation detail sharing and discussion
+              * A bit high level principles if technical detail is too much
+              * Some fun
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
+
+
 
   slide-intro-less-is-more:
 

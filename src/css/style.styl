@@ -11,6 +11,7 @@ textShadow=  2px 2px 1px rgba(0, 0, 0, 0.0)
 body
   font-family fontOpenSans
 
+
 .axg-app
   display flex
   justify-content center
@@ -115,6 +116,52 @@ body
                   background-image url('../img/roger.jpg')
                 &:after
                   content:'With 16 years of experience in software development, Roger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.'
+    &#slide-current-project
+      display flex
+      justify-content center
+      align-items center
+      padding 0
+      background white
+      >div
+        height 100vh
+        width 50vw
+        background-image url('../img/introduction.png')
+        background-size cover
+        font-size 0
+        &:first-child
+          height auto
+          background white
+          width 50vw
+          padding 40px
+          font-size inherit
+          h1
+            color colorPaloGreen
+          ul
+            li
+              font-size 16pt
+    &#slide-intro
+      display flex
+      justify-content center
+      align-items center
+      padding 0
+      background white
+      >div
+        height 100vh
+        width 50vw
+        background-image url('../img/introduction.png')
+        background-size cover
+        font-size 0
+        &:first-child
+          height auto
+          background white
+          width 50vw
+          padding 40px
+          font-size inherit
+          h1
+            color colorPaloGreen
+          ul
+            li
+              font-size 16pt
 
 .emoji-form
   display flex
