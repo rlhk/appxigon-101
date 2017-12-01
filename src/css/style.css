@@ -13,15 +13,24 @@ body {
 .axg-app .axg-view {
   background: #05cc98;
   padding: 0px 20px;
-  min-width: 1200px;
-  min-height: 800px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.axg-app .axg-view h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  font-size: 48px;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0);
+  text-transform: uppercase;
+  color: #fff;
 }
 .axg-app .axg-view#slide-cover {
   background-image: url("../img/introduction.png");
   background-size: cover;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   color: #fff;
 }
 .axg-app .axg-view#slide-cover .axg-group {
@@ -38,14 +47,6 @@ body {
   padding-right: 50px;
   margin-right: 50px;
 }
-.axg-app .axg-view#slide-cover .axg-group h1 {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 5px;
-  letter-spacing: 1px;
-  font-size: 48px;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0);
-  text-transform: uppercase;
-}
 .axg-app .axg-view#slide-cover .axg-group h2 {
   margin-top: 0;
   font-size: 40px;
@@ -56,4 +57,61 @@ body {
   margin-top: 0;
   font-size: 20px;
   text-transform: uppercase;
+}
+.axg-app .axg-view#slide-speakers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.axg-app .axg-view#slide-speakers .axg-group {
+  max-width: 1200px;
+}
+.axg-app .axg-view#slide-speakers .axg-group h1 {
+  color: #05cc98;
+}
+.axg-app .axg-view#slide-speakers .axg-group .speakers-list label {
+  display: none;
+}
+.axg-app .axg-view#slide-speakers .axg-group .speakers-list ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.axg-app .axg-view#slide-speakers .axg-group .speakers-list ul li {
+  width: 40%;
+  list-style: none;
+  display: block;
+  color: #05cc98;
+  font-size: 22pt;
+  font-family: 'Montserrat', sans-serif;
+}
+.axg-app .axg-view#slide-speakers .axg-group .speakers-list ul li:before {
+  content: ' ';
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: 3px solid #05cc98;
+  background-image: url("../img/sieg.jpg");
+  margin: 30px 0px;
+}
+.axg-app .axg-view#slide-speakers .axg-group .speakers-list ul li:after {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+  font-size: 18pt;
+  display: block;
+  color: #706f67;
+  content: 'Skilled in informatics, development and all things technology related, Siegfried is an online guru. He has delivered projects and consulted across a wide array of industries including Banking, Telecommunications, startups and many more. He believes in delivering scalable, sustainable and practical solutions using modern technology and practices.';
+}
+.axg-app .axg-view#slide-speakers .axg-group .speakers-list ul li:first-child {
+  margin-right: 10%;
+}
+.axg-app .axg-view#slide-speakers .axg-group .speakers-list ul li:first-child:before {
+  background-image: url("../img/roger.jpg");
+}
+.axg-app .axg-view#slide-speakers .axg-group .speakers-list ul li:first-child:after {
+  content: 'With 16 years of experience in software development, Roger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.';
 }

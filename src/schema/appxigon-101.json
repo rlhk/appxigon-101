@@ -96,6 +96,7 @@
         },
         {
           "speakers": {
+            "class": "speakers-list",
             "type": "select/list",
             "data": {
               "default": [
@@ -109,14 +110,6 @@
                 }
               ]
             }
-          }
-        }
-      ],
-      "footnote": [
-        {
-          "content": {
-            "type": "display",
-            "content": "Some footnote here...\n"
           }
         }
       ]

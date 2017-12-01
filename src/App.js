@@ -11,6 +11,7 @@ import 'sanitize.css';
 import './css/style.css';
 
 import AppxigonLogo from './component/appxigon-logo'
+import Form from './component/clap/Form';
 
 import schemaPresentation from './schema/appxigon-101'
 

@@ -20,15 +20,22 @@ body
   .axg-view
     background colorPaloGreen
     padding 0px 20px
-    min-width 1200px
-    min-height 800px
+    height 100vh
+    width 100vw
+    display flex
+    justify-content center
+    align-items center
+    h1
+      font-family fontMonsterrat
+      margin-bottom 5px
+      letter-spacing 1px
+      font-size 48px
+      text-shadow textShadow
+      text-transform uppercase
+      color white
     &#slide-cover
       background-image url('../img/introduction.png')
       background-size cover
-
-      justify-content center
-      align-items center
-      display flex
       color white
       .axg-group
         display flex
@@ -42,13 +49,6 @@ body
           border-right 5px solid white
           padding-right 50px
           margin-right 50px
-        h1
-          font-family fontMonsterrat
-          margin-bottom 5px
-          letter-spacing 1px
-          font-size 48px
-          text-shadow textShadow
-          text-transform uppercase
         h2
           margin-top 0
           font-size 40px
@@ -58,6 +58,55 @@ body
           margin-top 0
           font-size 20px
           text-transform uppercase
+    &#slide-speakers
+      display flex
+      justify-content center
+      align-items center
+      background white
+      .axg-group
+        max-width 1200px
+        h1
+          color colorPaloGreen
+        .speakers-list
+          label
+            display none
+          ul
+            display flex
+            padding 0
+            margin 0
+            li
+              width 40%
+              list-style none
+              display block
+              color colorPaloGreen
+              font-size 22pt
+              font-family fontMonsterrat
+              &:before
+                content ' '
+                background-size cover
+                background-position center
+                border-radius 50%
+                width 200px
+                height 200px
+                display block
+                border 3px solid colorPaloGreen
+                background-image url('../img/sieg.jpg')
+                margin 30px 0px
+              &:after
+                font-family fontOpenSans
+                margin-top 20px
+                font-size 18pt
+                display block
+                color #706F67
+                content 'Skilled in informatics, development and all things technology related, Siegfried is an online guru. He has delivered projects and consulted across a wide array of industries including Banking, Telecommunications, startups and many more. He believes in delivering scalable, sustainable and practical solutions using modern technology and practices.'
+              &:first-child
+                margin-right 10%
+                &:before
+                  background-image url('../img/roger.jpg')
+                &:after
+                  content:'With 16 years of experience in software development, Roger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.'
+
+
   // .logo
   //   width 200px
   // .slide-overlay

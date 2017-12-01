@@ -71,6 +71,7 @@ axg-101: # arbitary app-id
             Who are we?
             ============
       - speakers:
+          class: speakers-list
           type: select/list
           data:
             default:
@@ -78,11 +79,6 @@ axg-101: # arbitary app-id
                 text:  Roger LAM
               - value: siegfried
                 text:  Siegfried GRIMBEEK
-    footnote: # arbitary group-id
-      - content:
-          type: display
-          content: |
-            Some footnote here...
 
   slide-intro:
     config: #view/config
