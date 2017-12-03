@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import * as firebase from 'firebase';
 
 //Our Dependancies
-import Emoji from './Emoji';
 import Effect from './Effect';
 
 //Firebase Setup
@@ -97,12 +96,6 @@ class Form extends Component {
   }
 
   render() {
-    let transitionActive = this.state.transitionActive, visible = '';
-
-    if(!transitionActive){
-      visible = 'visible'
-    }
-
     return (
       <div className="main-container">
         <div className="effect-container">
