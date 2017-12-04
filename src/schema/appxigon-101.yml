@@ -89,6 +89,7 @@ axg-101: # arbitary app-id
               - value: siegfried
                 text:  Siegfried GRIMBEEK
   slide-current-project:
+    class: two-column right-image
     config: #view/config
       layout: [ main, sidepic ]
     main: # arbitary group-id
@@ -117,6 +118,7 @@ axg-101: # arbitary app-id
           type: display
           value: div
   slide-intro:
+    class: two-column right-image
     config: #view/config
       layout: [ main, sidepic ]
     main: # arbitary group-id

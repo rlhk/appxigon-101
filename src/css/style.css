@@ -127,59 +127,32 @@ body {
 .axg-app .axg-view#slide-speakers .axg-group .speakers-list ul li:first-child:after {
   content: 'With 16 years of experience in software development, Roger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.';
 }
-.axg-app .axg-view#slide-current-project {
+.axg-app .axg-view.two-column {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   background: #fff;
 }
-.axg-app .axg-view#slide-current-project >div {
+.axg-app .axg-view.two-column h1 {
+  color: #05cc98;
+}
+.axg-app .axg-view.two-column ul li {
+  font-size: 16pt;
+}
+.axg-app .axg-view.two-column.right-image >div {
   height: 100vh;
   width: 50vw;
   background-image: url("../img/introduction.png");
   background-size: cover;
   font-size: 0;
 }
-.axg-app .axg-view#slide-current-project >div:first-child {
+.axg-app .axg-view.two-column.right-image >div:first-child {
   height: auto;
   background: #fff;
   width: 50vw;
   padding: 40px;
   font-size: inherit;
-}
-.axg-app .axg-view#slide-current-project >div:first-child h1 {
-  color: #05cc98;
-}
-.axg-app .axg-view#slide-current-project >div:first-child ul li {
-  font-size: 16pt;
-}
-.axg-app .axg-view#slide-intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  background: #fff;
-}
-.axg-app .axg-view#slide-intro >div {
-  height: 100vh;
-  width: 50vw;
-  background-image: url("../img/introduction.png");
-  background-size: cover;
-  font-size: 0;
-}
-.axg-app .axg-view#slide-intro >div:first-child {
-  height: auto;
-  background: #fff;
-  width: 50vw;
-  padding: 40px;
-  font-size: inherit;
-}
-.axg-app .axg-view#slide-intro >div:first-child h1 {
-  color: #05cc98;
-}
-.axg-app .axg-view#slide-intro >div:first-child ul li {
-  font-size: 16pt;
 }
 .emoji-form {
   display: flex;
@@ -227,6 +200,23 @@ body {
   animation-fill-mode: forwards;
   transition: all 0.3s ease-in;
 }
+.animate-in {
+  -webkit-animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.5s ease-in;
+}
+.animate-out {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @-moz-keyframes fadeOut {
   0% {
     opacity: 1;
@@ -265,5 +255,37 @@ body {
   100% {
     opacity: 0;
     transform: translateY(-90vh);
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

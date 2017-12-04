@@ -131,6 +131,7 @@
       ]
     },
     "slide-current-project": {
+      "class": "two-column right-image",
       "config": {
         "layout": [
           "main",
@@ -155,6 +156,7 @@
       ]
     },
     "slide-intro": {
+      "class": "two-column right-image",
       "config": {
         "layout": [
           "main",
