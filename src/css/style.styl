@@ -6,10 +6,11 @@
 fontMonsterrat = 'Montserrat', sans-serif
 fontOpenSans = 'Open Sans', sans-serif
 colorPaloGreen = #05CC98
-textShadow=  2px 2px 1px rgba(0, 0, 0, 0.0)
+textShadow=  2px 2px 1px rgba(0, 0, 0, 0.5)
 
 body
   font-family fontOpenSans
+  overflow hidden
 
 
 .axg-app
@@ -31,10 +32,9 @@ body
       margin-bottom 5px
       letter-spacing 1px
       font-size 48px
-      text-shadow textShadow
       text-transform uppercase
       color white
-    &#header
+    &#footer
       position fixed
       height 0px
       bottom 0
@@ -126,7 +126,8 @@ body
         color colorPaloGreen
       ul
         li
-          font-size 16pt
+          font-size 19pt
+          line-height: 40pt
       &.right-image
         >div
           height 100vh
@@ -140,7 +141,94 @@ body
             width 50vw
             padding 40px
             font-size inherit
+      &.left-image
+        >div
+          height auto
+          background white
+          width 50vw
+          padding 40px
+          font-size inherit
+          &:first-child
+            height 100vh
+            width 50vw
+            background-image url('../img/introduction.png')
+            background-size cover
+            font-size 0
+    &.just-info
+       padding-top 90px
+       align-items flex-start
+      .header
+        position absolute
+        top 0
+        left 0
+        width 100%
+        padding 0px 50px 30px 50px
+        background-color colorPaloGreen
+        h1
+          color white
+      .footer
+        position absolute
+        bottom 0
+        left 0
+        width 100%
+        padding 20px 50px 30px 50px
+        background-color colorPaloGreen
+        text-align center
+        h1
+          color white
+          font-size 24pt
+      .column
+        padding 50px
+      .left-column
+        width: 50%
+        height 100vh
+        border-right 5px solid colorPaloGreen
+      .right-column
+        width: 50%
 
+    &.quote-content
+      color white
+      padding 150px
+      font-size 24pt
+      line-height 38pt
+      font-style italic
+      font-family: fontMonsterrat
+      p
+        position relative
+        &:before
+          content '``'
+          position absolute
+          top 20px
+          left -120px
+          font-size: 100pt
+          opacity 0.9
+    &.gif-content
+      background-image url('../img/backflip.gif')
+      background-size cover
+      background-position center center
+      h1
+        text-shadow textShadow
+
+.slider
+  position: absolute
+  left 0
+  top: -100px
+  width 100vw
+  height 100px
+  display flex
+  align-items flex-end
+  .progress-bar
+    background #EF8035
+    height 20px
+    width 100%
+    display block
+    position relative
+    .progress
+      background #426AEA
+      width 33%
+      position: absolute;
+      left 0
+      height 20px
 
 .emoji-form
   display flex
@@ -187,8 +275,8 @@ body
         transition: all 0.3s ease-in
 
 .animate-in {
-    -webkit-animation: fadeIn .5s ease-in;
-    animation: fadeIn .5s ease-in;
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
 }
 .animate-out {
     -webkit-transition: opacity .5s;

@@ -30,6 +30,10 @@ axg-101: # arbitary app-id
             - slide-speakers
             - slide-current-project
             - slide-intro
+            - slide-todays-topic
+            - technical-frameworks
+            - inventors-paradox
+            - gif-slide
       ArrowRight: # standard DOM key name
         uri: .nextView
         params:
@@ -39,6 +43,10 @@ axg-101: # arbitary app-id
             - slide-speakers
             - slide-current-project
             - slide-intro
+            - slide-todays-topic
+            - technical-frameworks
+            - inventors-paradox
+            - gif-slide
       ArrowLeft:
         uri: .nextView
         params:
@@ -48,12 +56,16 @@ axg-101: # arbitary app-id
             - slide-speakers
             - slide-current-project
             - slide-intro
+            - slide-todays-topic
+            - technical-frameworks
+            - inventors-paradox
+            - gif-slide
     view: # configurations applicable to all views
           actions:
             - call:
                 uri: .transitClass
                 params:
-                  name: view-transition-effect
+                  name: animate-in
                   timeout: 1000 # ms
   slide-cover: # view-id (arbitary)
     config: #view/config
@@ -89,9 +101,9 @@ axg-101: # arbitary app-id
               - value: siegfried
                 text:  Siegfried GRIMBEEK
   slide-current-project:
-    class: two-column right-image
     config: #view/config
       layout: [ main, sidepic ]
+      class: two-column right-image
     main: # arbitary group-id
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
@@ -118,9 +130,9 @@ axg-101: # arbitary app-id
           type: display
           value: div
   slide-intro:
-    class: two-column right-image
     config: #view/config
       layout: [ main, sidepic ]
+      class: two-column right-image
     main: # arbitary group-id
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
@@ -140,8 +152,96 @@ axg-101: # arbitary app-id
       - content:
           type: display
           value: div
+  slide-todays-topic:
+    config: #view/config
+      layout: [ header, left, right, footer ]
+      class: two-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Less is more
+            ============
 
+    left: # arbitary group-id
+      - config:
+          class: column left-column
+      - content:
+          type: display
+          content: |
+            Less
+            ============
+              * Our problems today
+              * Boilerplate, code wiring
+              * Repetition (DRY)
+              * Works that machine can do better than us
+              * Technical work
 
+    right: # arbitary group-id
+      - config:
+          class: column right-column
+      - content:
+          type: display
+          content: |
+            More
+            ============
+              * The approach we are proposing
+              * Achieve more projects
+              * Time to think
+              * Declarative work (Let the machine fulfil our wishes)
+              * Time to think about AGI
+
+    footer: # arbitary group-idclass: header
+      - config:
+          class: footer
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Beyond: The whole point of doing less while achieving more
+            ============
+  technical-frameworks:
+    config: #view/config
+      layout: [ sidepic, main ]
+      class: two-column left-image
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
+    main: # arbitary group-id
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Technical Frameworks:
+            ============
+              * Technical VS Business Application / Problem Domain
+              * Framework: FRAMED to Work in certain way
+              * No matter which framework / library you work, your logic is always wired in source codes, so tightly!
+
+            This talk:
+            ============
+            * We focus on the client side of general business applications, which is what we work on most of the time. However the big ideas are universal
+            * The higher level are we, we generalize more
+  inventors-paradox:
+    config: #view/config
+      layout: [ quote ]
+      class: quote-content
+    quote: # arbitary group-id
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            The **inventor's paradox** is a phenomenon that occurs in seeking a solution to a given problem. Instead of solving a specific type of problem, which would seem intuitively easier, it can be easier to solve a more general problem, which covers the specifics of the sought-after solution.
+  gif-slide:
+    config: #view/config
+      layout: [ gif ]
+      class: gif-content
+    gif: # arbitary group-id
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            How do we learn?
+            ==============
 
   slide-intro-less-is-more:
 
@@ -168,14 +268,13 @@ axg-101: # arbitary app-id
       - statistics :
           type: display
 
-  header: # view-id 'header' specified as in view.template
-    footer: #axg-word/view. footer view to be rendered last
+  footer: # view-id 'header' specified as in view.template
     config:
       class: custom-footer-view #overwrites default class of 'view'
       layout:
         - default
     default: # Here 'default' is just an arbitary group id. items should be contained in group id
-      - config:
-          class: 'custom-footer-group' # special item to indicate custom class if items are indicated as array
-      - logo:
+      - response-form:
           type: response-form
+      - slider:
+          type: appxigon-slider

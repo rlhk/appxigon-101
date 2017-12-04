@@ -12,6 +12,7 @@ import './css/style.css';
 
 import AppxigonLogo from './component/appxigon-logo'
 import Form from './component/clap/Form';
+import Slider  from './component/appxigon-slider'
 
 import schemaPresentation from './schema/appxigon-101'
 
@@ -22,6 +23,7 @@ import zh from './i18n/zh.json'
 const store = configStore(browserHistory)
 Appxigon.addItemType('appxigon-logo', AppxigonLogo)
 Appxigon.addItemType('response-form', Form)
+Appxigon.addItemType('appxigon-slider', Slider)
 
 Appxigon.addFunctions(customAxgFunctions)
 Appxigon.addNativeState('history', hashHistory)

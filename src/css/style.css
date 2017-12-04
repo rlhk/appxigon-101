@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 .axg-app {
   display: flex;
@@ -24,18 +25,17 @@ body {
   margin-bottom: 5px;
   letter-spacing: 1px;
   font-size: 48px;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0);
   text-transform: uppercase;
   color: #fff;
 }
-.axg-app .axg-view#header {
+.axg-app .axg-view#footer {
   position: fixed;
   height: 0px;
   bottom: 0;
   left: 0;
   right: 0;
 }
-.axg-app .axg-view#header .effect-container {
+.axg-app .axg-view#footer .effect-container {
   left: 0;
   position: absolute;
   width: 100%;
@@ -63,7 +63,7 @@ body {
   margin-top: 0;
   font-size: 40px;
   letter-spacing: 1px;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0);
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
 }
 .axg-app .axg-view#slide-cover .axg-group p {
   margin-top: 0;
@@ -138,7 +138,8 @@ body {
   color: #05cc98;
 }
 .axg-app .axg-view.two-column ul li {
-  font-size: 16pt;
+  font-size: 19pt;
+  line-height: 40pt;
 }
 .axg-app .axg-view.two-column.right-image >div {
   height: 100vh;
@@ -153,6 +154,109 @@ body {
   width: 50vw;
   padding: 40px;
   font-size: inherit;
+}
+.axg-app .axg-view.two-column.left-image >div {
+  height: auto;
+  background: #fff;
+  width: 50vw;
+  padding: 40px;
+  font-size: inherit;
+}
+.axg-app .axg-view.two-column.left-image >div:first-child {
+  height: 100vh;
+  width: 50vw;
+  background-image: url("../img/introduction.png");
+  background-size: cover;
+  font-size: 0;
+}
+.axg-app .axg-view.just-info {
+  padding-top: 90px;
+  align-items: flex-start;
+}
+.axg-app .axg-view .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 50px 30px 50px;
+  background-color: #05cc98;
+}
+.axg-app .axg-view .header h1 {
+  color: #fff;
+}
+.axg-app .axg-view .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px 30px 50px;
+  background-color: #05cc98;
+  text-align: center;
+}
+.axg-app .axg-view .footer h1 {
+  color: #fff;
+  font-size: 24pt;
+}
+.axg-app .axg-view .column {
+  padding: 50px;
+}
+.axg-app .axg-view .left-column {
+  width: 50%;
+  height: 100vh;
+  border-right: 5px solid #05cc98;
+}
+.axg-app .axg-view .right-column {
+  width: 50%;
+}
+.axg-app .axg-view.quote-content {
+  color: #fff;
+  padding: 150px;
+  font-size: 24pt;
+  line-height: 38pt;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+}
+.axg-app .axg-view.quote-content p {
+  position: relative;
+}
+.axg-app .axg-view.quote-content p:before {
+  content: '``';
+  position: absolute;
+  top: 20px;
+  left: -120px;
+  font-size: 100pt;
+  opacity: 0.9;
+}
+.axg-app .axg-view.gif-content {
+  background-image: url("../img/backflip.gif");
+  background-size: cover;
+  background-position: center center;
+}
+.axg-app .axg-view.gif-content h1 {
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+}
+.slider {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+.slider .progress-bar {
+  background: #ef8035;
+  height: 20px;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.slider .progress-bar .progress {
+  background: #426aea;
+  width: 33%;
+  position: absolute;
+  left: 0;
+  height: 20px;
 }
 .emoji-form {
   display: flex;
@@ -201,8 +305,8 @@ body {
   transition: all 0.3s ease-in;
 }
 .animate-in {
-  -webkit-animation: fadeIn 0.5s ease-in;
-  animation: fadeIn 0.5s ease-in;
+  -webkit-animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in;
 }
 .animate-out {
   -webkit-transition: opacity 0.5s;
