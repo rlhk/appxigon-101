@@ -79,3 +79,22 @@ export function transitClass(params, ctx) {
     )
   }
 }
+
+export function updateSlideProgress(params, ctx) {
+  let id = get(params, 'id')
+  let currentView = get(params, 'currentView')
+  let views = get(params, 'views')
+  let progress = views.indexOf(currentView) / (views.length - 1)
+  if (id) {
+    setTimeout(
+      ()=> {
+        ctx.actions.axgSetState({
+          id: id,
+          key: 'progress',
+          val: progress,
+        })
+      },
+      300
+    )
+  }
+}
