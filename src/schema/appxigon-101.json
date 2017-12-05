@@ -46,6 +46,7 @@
               "component-based-ui-one",
               "component-based-ui",
               "powerful-abstraction",
+              "nested-structure",
               "flattened-structure",
               "proposed-application",
               "cheap-talk",
@@ -82,6 +83,7 @@
               "component-based-ui-one",
               "component-based-ui",
               "powerful-abstraction",
+              "nested-structure",
               "flattened-structure",
               "proposed-application",
               "cheap-talk",
@@ -118,6 +120,7 @@
               "component-based-ui-one",
               "component-based-ui",
               "powerful-abstraction",
+              "nested-structure",
               "flattened-structure",
               "proposed-application",
               "cheap-talk",
@@ -827,6 +830,41 @@
         }
       ]
     },
+    "nested-structure": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column"
+        ],
+        "class": "full-column"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Nested structure\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "div"
+          }
+        }
+      ]
+    },
     "flattened-structure": {
       "config": {
         "layout": [
@@ -1091,10 +1129,10 @@
         {
           "qr-code": {
             "type": "display/image",
-            "value": "https://chart.googleapis.com/chart?cht=qr&chl=www.goo.gl%2Fr45fMP&chs=180x180&choe=UTF-8&chld=L|2",
+            "value": "https://chart.googleapis.com/chart?cht=qr&chl=www.goo.gl%2Fr45fMP&chs=500x500&choe=UTF-8&chld=L|2",
             "element": {
-              "width": 300,
-              "height": 300
+              "width": 500,
+              "height": 500
             }
           }
         },

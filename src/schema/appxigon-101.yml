@@ -46,6 +46,7 @@ axg-101: # arbitary app-id
             - component-based-ui-one
             - component-based-ui
             - powerful-abstraction
+            - nested-structure
             - flattened-structure
             - proposed-application
             - cheap-talk
@@ -79,6 +80,7 @@ axg-101: # arbitary app-id
             - component-based-ui-one
             - component-based-ui
             - powerful-abstraction
+            - nested-structure
             - flattened-structure
             - proposed-application
             - cheap-talk
@@ -112,6 +114,7 @@ axg-101: # arbitary app-id
             - component-based-ui-one
             - component-based-ui
             - powerful-abstraction
+            - nested-structure
             - flattened-structure
             - proposed-application
             - cheap-talk
@@ -619,6 +622,24 @@ axg-101: # arbitary app-id
       - content:
           type: display
           value: div
+  nested-structure:
+    config: #view/config
+      layout: [ header, full-column ]
+      class: full-column
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Nested structure
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: div
   flattened-structure:
     config: #view/config
       layout: [ header, full-column ]
@@ -793,10 +814,10 @@ axg-101: # arbitary app-id
     info:
       - qr-code:
           type: display/image
-          value: https://chart.googleapis.com/chart?cht=qr&chl=www.goo.gl%2Fr45fMP&chs=180x180&choe=UTF-8&chld=L|2
+          value: https://chart.googleapis.com/chart?cht=qr&chl=www.goo.gl%2Fr45fMP&chs=500x500&choe=UTF-8&chld=L|2
           element:
-            width: 300
-            height: 300
+            width: 500
+            height: 500
       - message:
           type: display
           content: |

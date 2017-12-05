@@ -243,10 +243,17 @@ body {
 .axg-app .axg-view#lessons-learned.right-image >div:first-child {
   background: #fff;
 }
+.axg-app .axg-view#nested-structure .column {
+  background-image: url("../img/nested-structure.png");
+  background-size: 60%;
+  background-position: center 75px;
+  font-size: 0;
+  height: calc(100vh - 125px);
+}
 .axg-app .axg-view#flattened-structure .column {
   background-image: url("../img/flatten_structure.png");
   background-size: 60%;
-  background-position: center 50px;
+  background-position: center 65px;
   font-size: 0;
   height: calc(100vh - 125px);
 }
@@ -302,7 +309,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0px 50px 30px 50px;
+  padding: 20px 50px 30px 50px;
   background-color: #05cc98;
 }
 .axg-app .axg-view .header h1 {
@@ -459,6 +466,12 @@ body {
   to {
     opacity: 1;
   }
+}
+.modal-body {
+  text-align: center;
+}
+.modal-body span {
+  font-size: 26pt;
 }
 @-moz-keyframes fadeOut {
   0% {
