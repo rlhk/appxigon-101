@@ -128,7 +128,14 @@
               "lessons-learned"
             ]
           }
-        }
+        },
+        "q": {
+          "uri": ".showModal",
+          "params": {
+            "view": "appxigon-101/qr-code-link"
+          }
+        },
+        "Q": "q"
       },
       "view": {
         "actions": [
@@ -824,10 +831,9 @@
       "config": {
         "layout": [
           "header",
-          "full-column",
-          "footer"
+          "full-column"
         ],
-        "class": "full-column just-info"
+        "class": "full-column"
       },
       "header": [
         {
@@ -838,7 +844,20 @@
         {
           "content": {
             "type": "display",
-            "content": "A flattened / normalized / simplified / reduced structure\n============\n"
+            "content": "A flattened / normalized / structure\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "div"
           }
         }
       ]
@@ -1063,6 +1082,26 @@
         {
           "statistics": {
             "type": "display"
+          }
+        }
+      ]
+    },
+    "qr-code-link": {
+      "info": [
+        {
+          "qr-code": {
+            "type": "display/image",
+            "value": "https://chart.googleapis.com/chart?cht=qr&chl=www.goo.gl%2Fr45fMP&chs=180x180&choe=UTF-8&chld=L|2",
+            "element": {
+              "width": 300,
+              "height": 300
+            }
+          }
+        },
+        {
+          "message": {
+            "type": "display",
+            "content": "www.goo.gl/r45fMP\n"
           }
         }
       ]

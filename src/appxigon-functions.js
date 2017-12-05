@@ -2,6 +2,7 @@
 
 import { get } from 'lodash'
 import { utils } from 'appxigon'
+import { at } from 'prelude-ls'
 
 export function customLocaleSwitch(params, ctx) {
   const locale = get(params, 'locale', 'en')
@@ -96,5 +97,23 @@ export function updateSlideProgress(params, ctx) {
       },
       300
     )
+  }
+}
+
+export function showModal(params, ctx) {
+  let viewTokens = []
+  let viewString = get(params, 'view')
+  if (viewString) {
+    viewTokens = viewString.split('/')
+  }
+  let appId = at(0, viewTokens)
+  let viewId = at(-1, viewTokens)
+  let modalSchema = get(ctx, ['schema', appId, viewId])
+  let actions = get(ctx, 'actions')
+  if (actions) {
+    actions.axgSetModal(modalSchema)
+    actions.axgSetModalTitle(viewId)
+  } else {
+    console.error("AXG: error showing modal...")
   }
 }

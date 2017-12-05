@@ -184,7 +184,7 @@ body {
 .axg-app .axg-view#component-based-ui-one .column {
   background-image: url("../img/componentss.png");
   background-size: 70%;
-  background-position: center 180px;
+  background-position: center 115px;
   font-size: 0;
   height: calc(100vh - 125px);
 }
@@ -242,6 +242,13 @@ body {
 }
 .axg-app .axg-view#lessons-learned.right-image >div:first-child {
   background: #fff;
+}
+.axg-app .axg-view#flattened-structure .column {
+  background-image: url("../img/flatten_structure.png");
+  background-size: 60%;
+  background-position: center 50px;
+  font-size: 0;
+  height: calc(100vh - 125px);
 }
 .axg-app .axg-view.two-column {
   display: flex;

@@ -120,6 +120,11 @@ axg-101: # arbitary app-id
             - advantages
             - tech-benefits
             - lessons-learned
+      q:
+        uri: .showModal
+        params:
+          view: appxigon-101/qr-code-link
+      Q: q
     view: # configurations applicable to all views
       actions:
         - call:
@@ -616,16 +621,22 @@ axg-101: # arbitary app-id
           value: div
   flattened-structure:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
+      layout: [ header, full-column ]
+      class: full-column
     header: # arbitary group-idclass: header
       - config:
           class: header
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
-            A flattened / normalized / simplified / reduced structure
+            A flattened / normalized / structure
             ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: div
   proposed-application:
     config: #view/config
       layout: [ full-column, sidepic ]
@@ -777,6 +788,20 @@ axg-101: # arbitary app-id
     misc: # arbitary group-id
       - statistics :
           type: display
+
+  qr-code-link:
+    info:
+      - qr-code:
+          type: display/image
+          value: https://chart.googleapis.com/chart?cht=qr&chl=www.goo.gl%2Fr45fMP&chs=180x180&choe=UTF-8&chld=L|2
+          element:
+            width: 300
+            height: 300
+      - message:
+          type: display
+          content: |
+            www.goo.gl/r45fMP
+
 
   footer: # view-id 'header' specified as in view.template
     config:
