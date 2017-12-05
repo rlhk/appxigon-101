@@ -127,6 +127,46 @@ body {
 .axg-app .axg-view#slide-speakers .axg-group .speakers-list ul li:first-child:after {
   content: 'With 16 years of experience in software development, Roger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.';
 }
+.axg-app .axg-view#slide-intro.right-image >div {
+  background-image: url("../img/intro_slide.jpg");
+}
+.axg-app .axg-view#slide-intro.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#slide-abstraction-one.right-image >div {
+  background-image: url("../img/spot-runs.jpg");
+  background-position: center;
+}
+.axg-app .axg-view#slide-abstraction-one.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#care-about-learning {
+  background-image: url("../img/we_cares.png");
+  background-repeat: no-repeat;
+  background-size: 650px;
+  background-position: bottom right;
+}
+.axg-app .axg-view#what-does-software-do.right-image >div {
+  background-image: url("../img/data.jpeg");
+  background-position: left;
+}
+.axg-app .axg-view#what-does-software-do.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#values-of-business-software.right-image >div {
+  background-image: url("../img/value.jpg");
+  background-position: center;
+}
+.axg-app .axg-view#values-of-business-software.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#questions-to-ask-ourselves.right-image >div {
+  background-image: url("../img/questions.jpg");
+  background-position: center;
+}
+.axg-app .axg-view#questions-to-ask-ourselves.right-image >div:first-child {
+  background: #fff;
+}
 .axg-app .axg-view.two-column {
   display: flex;
   justify-content: center;
@@ -166,7 +206,7 @@ body {
 .axg-app .axg-view.two-column.left-image >div:first-child {
   height: 100vh;
   width: 50vw;
-  background-image: url("../img/introduction.png");
+  background-image: url("../img/tech_framework.jpeg");
   background-size: cover;
   font-size: 0;
 }

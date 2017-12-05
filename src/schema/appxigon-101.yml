@@ -321,22 +321,16 @@ axg-101: # arbitary app-id
                 * Accounting (DEAD CLIC)
   slide-abstraction-one:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
-      - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
-          content: |
-            Examples of Abstraction Levels
-            ============
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
     full-column: # arbitary group-id
       - config:
           class: column
       - content:
           type: display
           content: |
+              Examples of Abstraction Levels
+              ============
               Problem: Travel from point A to B
               ----------
                 * Walk
@@ -347,6 +341,10 @@ axg-101: # arbitary app-id
                 * Car with driver
                 * Train
                 * Reducing away the problem: Do you really need to travel?
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
   slide-abstraction-two:
     config: #view/config
       layout: [ header, left, right, footer ]
@@ -424,68 +422,64 @@ axg-101: # arbitary app-id
               * Until exit from technical role
   what-does-software-do:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
+    full-column: # arbitary group-id
       - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
+          class: column
+      - content:
+          type: display
           content: |
             What does software application do?
             ============
+              * Everything is data
+              * Managing data flow
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
+  values-of-business-software:
+    config: #view/config
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
     full-column: # arbitary group-id
       - config:
           class: column
       - content:
           type: display
-          content: |
-            * Everything is data
-            * Managing data flow
-  values-of-business-software:
-    config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
-      - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
           content: |
             What are the values of applications?
             ============
+              * Handle business and aesthetic requirements
+              * E.g. How fast can we:
+                * Build AB testing
+                * Building new features and functions
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
+
+  questions-to-ask-ourselves:
+    config: #view/config
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
     full-column: # arbitary group-id
       - config:
           class: column
       - content:
           type: display
-          content: |
-            * Handle business and aesthetic requirements
-            * E.g. How fast can we:
-              * Build AB testing
-              * Building new features and functions
-  questions-to-ask-ourselves:
-    config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
-      - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
           content: |
             Some questions to ask ourselves
             ============
-    full-column: # arbitary group-id
-      - config:
-          class: column
+              * What degree of freedom can the software architecture provide to the business?
+              * Do we really need an army of developers, to work on technical details?
+              * Should there be a role like application builder?
+              * Should developers be proud of being able to handling complexity over and over again?
+    sidepic: # arbitary group-id
       - content:
           type: display
-          content: |
-            * What degree of freedom can the software architecture provide to the business?
-            * Do we really need an army of developers, to work on technical details?
-            * Should there be a role like application builder?
-            * Should developers be proud of being able to handling complexity over and over again?
+          value: div
+
   application-ui:
     config: #view/config
       layout: [ header, full-column, footer ]

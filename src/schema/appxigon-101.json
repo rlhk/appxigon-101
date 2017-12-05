@@ -408,25 +408,11 @@
     "slide-abstraction-one": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Examples of Abstraction Levels\n============\n"
-          }
-        }
-      ],
       "full-column": [
         {
           "config": {
@@ -436,7 +422,15 @@
         {
           "content": {
             "type": "display",
-            "content": "Problem: Travel from point A to B\n----------\n  * Walk\n  * Run\n  * Bike\n  * Motor Bike\n  * Car\n  * Car with driver\n  * Train\n  * Reducing away the problem: Do you really need to travel?\n"
+            "content": "Examples of Abstraction Levels\n============\nProblem: Travel from point A to B\n----------\n  * Walk\n  * Run\n  * Bike\n  * Motor Bike\n  * Car\n  * Car with driver\n  * Train\n  * Reducing away the problem: Do you really need to travel?\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]
@@ -543,25 +537,11 @@
     "what-does-software-do": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "What does software application do?\n============\n"
-          }
-        }
-      ],
       "full-column": [
         {
           "config": {
@@ -571,7 +551,15 @@
         {
           "content": {
             "type": "display",
-            "content": "* Everything is data\n* Managing data flow\n"
+            "content": "What does software application do?\n============\n  * Everything is data\n  * Managing data flow\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]
@@ -579,25 +567,11 @@
     "values-of-business-software": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "What are the values of applications?\n============\n"
-          }
-        }
-      ],
       "full-column": [
         {
           "config": {
@@ -607,7 +581,15 @@
         {
           "content": {
             "type": "display",
-            "content": "* Handle business and aesthetic requirements\n* E.g. How fast can we:\n  * Build AB testing\n  * Building new features and functions\n"
+            "content": "What are the values of applications?\n============\n  * Handle business and aesthetic requirements\n  * E.g. How fast can we:\n    * Build AB testing\n    * Building new features and functions\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]
@@ -615,25 +597,11 @@
     "questions-to-ask-ourselves": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Some questions to ask ourselves\n============\n"
-          }
-        }
-      ],
       "full-column": [
         {
           "config": {
@@ -643,7 +611,15 @@
         {
           "content": {
             "type": "display",
-            "content": "* What degree of freedom can the software architecture provide to the business?\n* Do we really need an army of developers, to work on technical details?\n* Should there be a role like application builder?\n* Should developers be proud of being able to handling complexity over and over again?\n"
+            "content": "Some questions to ask ourselves\n============\n  * What degree of freedom can the software architecture provide to the business?\n  * Do we really need an army of developers, to work on technical details?\n  * Should there be a role like application builder?\n  * Should developers be proud of being able to handling complexity over and over again?\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]
