@@ -43,6 +43,7 @@
               "questions-to-ask-ourselves",
               "application-ui",
               "building-abstractions",
+              "component-based-ui-one",
               "component-based-ui",
               "powerful-abstraction",
               "flattened-structure",
@@ -78,6 +79,7 @@
               "questions-to-ask-ourselves",
               "application-ui",
               "building-abstractions",
+              "component-based-ui-one",
               "component-based-ui",
               "powerful-abstraction",
               "flattened-structure",
@@ -113,6 +115,7 @@
               "questions-to-ask-ourselves",
               "application-ui",
               "building-abstractions",
+              "component-based-ui-one",
               "component-based-ui",
               "powerful-abstraction",
               "flattened-structure",
@@ -135,6 +138,44 @@
               "params": {
                 "name": "animate-in",
                 "timeout": 1000
+              }
+            }
+          },
+          {
+            "call": {
+              "uri": ".updateSlideProgress",
+              "params": {
+                "id": "footer.default.slider",
+                "views": [
+                  "slide-cover",
+                  "slide-speakers",
+                  "slide-current-project",
+                  "slide-intro",
+                  "slide-todays-topic",
+                  "technical-frameworks",
+                  "inventors-paradox",
+                  "gif-slide",
+                  "slide-one-column",
+                  "slide-abstraction-one",
+                  "slide-abstraction-two",
+                  "care-about-learning",
+                  "what-does-software-do",
+                  "values-of-business-software",
+                  "questions-to-ask-ourselves",
+                  "application-ui",
+                  "building-abstractions",
+                  "component-based-ui-one",
+                  "component-based-ui",
+                  "powerful-abstraction",
+                  "flattened-structure",
+                  "proposed-application",
+                  "cheap-talk",
+                  "cheap-code",
+                  "current-implementation",
+                  "advantages",
+                  "tech-benefits",
+                  "lessons-learned"
+                ]
               }
             }
           }
@@ -684,6 +725,41 @@
         }
       ]
     },
+    "component-based-ui-one": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column"
+        ],
+        "class": "full-column"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Component Based UI\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "div"
+          }
+        }
+      ]
+    },
     "component-based-ui": {
       "config": {
         "layout": [
@@ -701,7 +777,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Different UI building abstractions\n============\n  * The way to build\n  * The issues\n  * Solutions?\n"
+            "content": "Component Based UI\n============\n  * The way to build\n  * The issues\n  * Solutions?\n"
           }
         }
       ],

@@ -43,6 +43,7 @@ axg-101: # arbitary app-id
             - questions-to-ask-ourselves
             - application-ui
             - building-abstractions
+            - component-based-ui-one
             - component-based-ui
             - powerful-abstraction
             - flattened-structure
@@ -75,6 +76,7 @@ axg-101: # arbitary app-id
             - questions-to-ask-ourselves
             - application-ui
             - building-abstractions
+            - component-based-ui-one
             - component-based-ui
             - powerful-abstraction
             - flattened-structure
@@ -107,6 +109,7 @@ axg-101: # arbitary app-id
             - questions-to-ask-ourselves
             - application-ui
             - building-abstractions
+            - component-based-ui-one
             - component-based-ui
             - powerful-abstraction
             - flattened-structure
@@ -118,12 +121,45 @@ axg-101: # arbitary app-id
             - tech-benefits
             - lessons-learned
     view: # configurations applicable to all views
-          actions:
-            - call:
-                uri: .transitClass
-                params:
-                  name: animate-in
-                  timeout: 1000 # ms
+      actions:
+        - call:
+            uri: .transitClass
+            params:
+              name: animate-in
+              timeout: 1000 # ms
+        - call:
+            uri: .updateSlideProgress
+            params:
+              id: footer.default.slider
+              views:
+                - slide-cover
+                - slide-speakers
+                - slide-current-project
+                - slide-intro
+                - slide-todays-topic
+                - technical-frameworks
+                - inventors-paradox
+                - gif-slide
+                - slide-one-column
+                - slide-abstraction-one
+                - slide-abstraction-two
+                - care-about-learning
+                - what-does-software-do
+                - values-of-business-software
+                - questions-to-ask-ourselves
+                - application-ui
+                - building-abstractions
+                - component-based-ui-one
+                - component-based-ui
+                - powerful-abstraction
+                - flattened-structure
+                - proposed-application
+                - cheap-talk
+                - cheap-code
+                - current-implementation
+                - advantages
+                - tech-benefits
+                - lessons-learned
   slide-cover: # view-id (arbitary)
     config: #view/config
       title: #view/config/attribute. Defaults to "Slide Cover" (from id)
@@ -519,6 +555,25 @@ axg-101: # arbitary app-id
       - content:
           type: display
           value: div
+  component-based-ui-one:
+    config: #view/config
+      layout: [ header, full-column ]
+      class: full-column
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Component Based UI
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: div
+
   component-based-ui:
     config: #view/config
       layout: [ full-column, sidepic ]
@@ -529,7 +584,7 @@ axg-101: # arbitary app-id
       - content:
           type: display
           content: |
-            Different UI building abstractions
+            Component Based UI
             ============
               * The way to build
               * The issues
@@ -707,7 +762,7 @@ axg-101: # arbitary app-id
       - content:
           type: display
           value: div
-          
+
   feedback: # view-id
     config: #view/config
       title: #view/config/attribute
