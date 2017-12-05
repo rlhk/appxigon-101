@@ -132,7 +132,7 @@
         "q": {
           "uri": ".showModal",
           "params": {
-            "view": "appxigon-101/qr-code-link"
+            "view": "axg-101/qr-code-link"
           }
         },
         "Q": "q"

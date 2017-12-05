@@ -123,7 +123,7 @@ axg-101: # arbitary app-id
       q:
         uri: .showModal
         params:
-          view: appxigon-101/qr-code-link
+          view: axg-101/qr-code-link
       Q: q
     view: # configurations applicable to all views
       actions:
