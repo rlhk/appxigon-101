@@ -55,6 +55,7 @@ axg-101: # arbitary app-id
             - advantages
             - tech-benefits
             - lessons-learned
+            - slide-questions
       ArrowRight: # standard DOM key name
         uri: .nextView
         params:
@@ -89,6 +90,7 @@ axg-101: # arbitary app-id
             - advantages
             - tech-benefits
             - lessons-learned
+            - slide-questions
       ArrowLeft:
         uri: .nextView
         params:
@@ -123,6 +125,7 @@ axg-101: # arbitary app-id
             - advantages
             - tech-benefits
             - lessons-learned
+            - slide-questions
       q:
         uri: .showModal
         params:
@@ -168,6 +171,7 @@ axg-101: # arbitary app-id
                 - advantages
                 - tech-benefits
                 - lessons-learned
+                - slide-questions
   slide-cover: # view-id (arbitary)
     config: #view/config
       title: #view/config/attribute. Defaults to "Slide Cover" (from id)
@@ -447,7 +451,7 @@ axg-101: # arbitary app-id
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
-            What do we care about learning?
+            Why do we care about learning?
             ============
     full-column: # arbitary group-id
       - config:
@@ -794,6 +798,17 @@ axg-101: # arbitary app-id
       - content:
           type: display
           value: div
+  slide-questions: # view-id (arbitary)
+    config: #view/config
+      title: #view/config/attribute. Defaults to "Slide Cover" (from id)
+      layout: [ main, speakers ]
+    main: # arbitary group-id
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Any Questions?
+            ============
+            Feel free to ask...
 
   feedback: # view-id
     config: #view/config

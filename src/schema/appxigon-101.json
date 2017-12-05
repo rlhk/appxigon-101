@@ -54,7 +54,8 @@
               "current-implementation",
               "advantages",
               "tech-benefits",
-              "lessons-learned"
+              "lessons-learned",
+              "slide-questions"
             ]
           }
         },
@@ -91,7 +92,8 @@
               "current-implementation",
               "advantages",
               "tech-benefits",
-              "lessons-learned"
+              "lessons-learned",
+              "slide-questions"
             ]
           }
         },
@@ -128,7 +130,8 @@
               "current-implementation",
               "advantages",
               "tech-benefits",
-              "lessons-learned"
+              "lessons-learned",
+              "slide-questions"
             ]
           }
         },
@@ -184,7 +187,8 @@
                   "current-implementation",
                   "advantages",
                   "tech-benefits",
-                  "lessons-learned"
+                  "lessons-learned",
+                  "slide-questions"
                 ]
               }
             }
@@ -567,7 +571,7 @@
         {
           "content": {
             "type": "display",
-            "content": "What do we care about learning?\n============\n"
+            "content": "Why do we care about learning?\n============\n"
           }
         }
       ],
@@ -1092,6 +1096,23 @@
           "content": {
             "type": "display",
             "value": "div"
+          }
+        }
+      ]
+    },
+    "slide-questions": {
+      "config": {
+        "title": null,
+        "layout": [
+          "main",
+          "speakers"
+        ]
+      },
+      "main": [
+        {
+          "content": {
+            "type": "display",
+            "content": "Any Questions?\n============\nFeel free to ask...\n"
           }
         }
       ]

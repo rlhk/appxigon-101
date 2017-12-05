@@ -11,7 +11,7 @@ textShadow=  2px 2px 1px rgba(0, 0, 0, 0.5)
 body
   font-family fontOpenSans
   overflow hidden
-  padding-bottom 20px
+  padding-bottom 10px
 
 .axg-app
   display flex
@@ -134,6 +134,13 @@ body
       background-size 650px
       background-position bottom right
 
+    &#slide-one-column
+      background-image url('../img/we_cares.png')
+      background-repeat no-repeat
+      background-size 650px
+      background-position bottom right
+      padding-top 120px
+
     &#what-does-software-do
       &.right-image
         >div
@@ -247,7 +254,7 @@ body
     &#nested-structure
       .column
         background-image url('../img/nested-structure.png')
-        background-size: 60%
+        background-size: 80%
         background-position center 75px
         font-size 0
         height calc(100vh - 125px)
@@ -255,7 +262,7 @@ body
     &#flattened-structure
       .column
         background-image url('../img/flatten_structure.png')
-        background-size: 60%
+        background-size: 50%
         background-position center 65px
         font-size 0
         height calc(100vh - 125px)
@@ -307,7 +314,7 @@ body
         top 0
         left 0
         width 100%
-        padding 20px 50px 30px 50px
+        padding 10px 50px 30px 50px
         background-color colorPaloGreen
         h1
           color white
@@ -340,13 +347,6 @@ body
       font-family: fontMonsterrat
       p
         position relative
-        &:before
-          content '``'
-          position absolute
-          top 20px
-          left -120px
-          font-size: 100pt
-          opacity 0.9
     &.gif-content
       background-image url('../img/backflip.gif')
       background-size cover
