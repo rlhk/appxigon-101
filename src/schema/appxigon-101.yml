@@ -34,6 +34,7 @@ axg-101: # arbitary app-id
             - technical-frameworks
             - inventors-paradox
             - gif-slide
+            - slide-one-column
       ArrowRight: # standard DOM key name
         uri: .nextView
         params:
@@ -47,6 +48,7 @@ axg-101: # arbitary app-id
             - technical-frameworks
             - inventors-paradox
             - gif-slide
+            - slide-one-column
       ArrowLeft:
         uri: .nextView
         params:
@@ -60,6 +62,7 @@ axg-101: # arbitary app-id
             - technical-frameworks
             - inventors-paradox
             - gif-slide
+            - slide-one-column
     view: # configurations applicable to all views
           actions:
             - call:
@@ -242,7 +245,45 @@ axg-101: # arbitary app-id
           content: |
             How do we learn?
             ==============
+  slide-one-column:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Less is more
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+            Less
+            ============
+              * Our problems today
+              * Boilerplate, code wiring
+              * Repetition (DRY)
+              * Works that machine can do better than us
+              * Technical work
+              * The approach we are proposing
+              * Achieve more projects
+              * Time to think
+              * Declarative work (Let the machine fulfil our wishes)
+              * Time to think about AGI
 
+    footer: # arbitary group-idclass: header
+      - config:
+          class: footer
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Beyond: The whole point of doing less while achieving more
+            ============
   slide-intro-less-is-more:
 
   slide-problem:

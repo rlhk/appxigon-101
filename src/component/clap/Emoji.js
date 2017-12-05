@@ -10,9 +10,7 @@ const Emoji = ({icon, name, onClick, styles, transitionActive, width}) => {
   }
 
   return (
-    <div className={"emoji " + activeClass} style={styles}>
-      <img src={icon} onClick={onClick} name={name} width={width} alt={name}/>
-    </div>
+    <div className={"emoji " + activeClass + " " + name} style={styles}></div>
   )
 }
 

@@ -33,7 +33,8 @@
               "slide-todays-topic",
               "technical-frameworks",
               "inventors-paradox",
-              "gif-slide"
+              "gif-slide",
+              "slide-one-column"
             ]
           }
         },
@@ -49,7 +50,8 @@
               "slide-todays-topic",
               "technical-frameworks",
               "inventors-paradox",
-              "gif-slide"
+              "gif-slide",
+              "slide-one-column"
             ]
           }
         },
@@ -65,7 +67,8 @@
               "slide-todays-topic",
               "technical-frameworks",
               "inventors-paradox",
-              "gif-slide"
+              "gif-slide",
+              "slide-one-column"
             ]
           }
         }
@@ -308,6 +311,55 @@
           "content": {
             "type": "display",
             "content": "How do we learn?\n==============\n"
+          }
+        }
+      ]
+    },
+    "slide-one-column": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Less is more\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Less\n============\n  * Our problems today\n  * Boilerplate, code wiring\n  * Repetition (DRY)\n  * Works that machine can do better than us\n  * Technical work\n  * The approach we are proposing\n  * Achieve more projects\n  * Time to think\n  * Declarative work (Let the machine fulfil our wishes)\n  * Time to think about AGI\n"
+          }
+        }
+      ],
+      "footer": [
+        {
+          "config": {
+            "class": "footer"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Beyond: The whole point of doing less while achieving more\n============\n"
           }
         }
       ]

@@ -4,7 +4,9 @@ import React from 'react';
 //Our Dependancies
 import Emoji from './Emoji';
 
-const Effect = ({icon, screenWidth, transitionActive}) => {
+const Effect = ({icon, name, screenWidth, transitionActive}) => {
+
+  console.log(icon)
 
   let emotiWidth = screenWidth / 5;
   let emotiCount = 8;
@@ -12,13 +14,17 @@ const Effect = ({icon, screenWidth, transitionActive}) => {
 
   for (let i = 0; i < emotiCount.toFixed(); i++){
     let animationTimes =( Math.random() * (1.0000 - 4.000) + 4.000).toFixed(4);
-    let styles = {animationDuration: animationTimes +'s'};
+    let styles = {
+      animationDuration: animationTimes +'s',
+      backgroundImage: `url(${icon})`
+    };
 
     emotiObjectArray.push({
       id: i,
       img: icon,
       styles: styles,
-      width: emotiWidth
+      width: emotiWidth,
+      name: name
     });
   };
 
@@ -26,6 +32,7 @@ const Effect = ({icon, screenWidth, transitionActive}) => {
     return(
       <Emoji
         key = {emoti.id}
+        name={emoti.name}
         icon={emoti.img}
         styles={emoti.styles}
         width={emoti.width}

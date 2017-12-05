@@ -3,6 +3,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   overflow: hidden;
+  padding-bottom: 20px;
 }
 .axg-app {
   display: flex;
@@ -13,7 +14,6 @@ body {
 }
 .axg-app .axg-view {
   background: #05cc98;
-  padding: 0px 20px;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -144,8 +144,9 @@ body {
 .axg-app .axg-view.two-column.right-image >div {
   height: 100vh;
   width: 50vw;
-  background-image: url("../img/introduction.png");
+  background-image: url("../img/current_project.jpg");
   background-size: cover;
+  background-position: right;
   font-size: 0;
 }
 .axg-app .axg-view.two-column.right-image >div:first-child {
@@ -189,7 +190,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px 50px 30px 50px;
+  padding: 20px 50px 50px 50px;
   background-color: #05cc98;
   text-align: center;
 }
@@ -235,6 +236,19 @@ body {
 .axg-app .axg-view.gif-content h1 {
   text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
 }
+.axg-app .axg-view.full-column {
+  background: #fff;
+}
+.axg-app .axg-view.full-column .column {
+  width: 100vw;
+}
+.axg-app .axg-view.full-column .column h1 {
+  color: #05cc98;
+}
+.axg-app .axg-view.full-column .column ul li {
+  font-size: 19pt;
+  line-height: 40pt;
+}
 .slider {
   position: absolute;
   left: 0;
@@ -250,13 +264,14 @@ body {
   width: 100%;
   display: block;
   position: relative;
+  transition: all 0.5s ease;
 }
 .slider .progress-bar .progress {
   background: #426aea;
-  width: 33%;
   position: absolute;
   left: 0;
   height: 20px;
+  transition: all 0.5s ease;
 }
 .emoji-form {
   display: flex;
@@ -288,12 +303,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translateY(128px);
 }
 .emoji-effect .emoji {
   display: block;
-  flex-shrink: 0; /* and here! */
-  max-width: 70px;
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
 }
 .emoji-effect .emoji img {
   max-width: 100%;
@@ -302,11 +317,12 @@ body {
   animation-name: fadeOut;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
+  background-size: cover;
 }
 .animate-in {
-  -webkit-animation: fadeIn 1s ease-in;
-  animation: fadeIn 1s ease-in;
+  -webkit-animation: fadeIn 0.7s ease-in;
+  animation: fadeIn 0.7s ease-in;
 }
 .animate-out {
   -webkit-transition: opacity 0.5s;
@@ -328,7 +344,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(-90vh);
+    transform: translateY(-110vh);
   }
 }
 @-webkit-keyframes fadeOut {
@@ -338,7 +354,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(-90vh);
+    transform: translateY(-110vh);
   }
 }
 @-o-keyframes fadeOut {
@@ -348,7 +364,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(-90vh);
+    transform: translateY(-110vh);
   }
 }
 @keyframes fadeOut {
@@ -358,12 +374,12 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(-90vh);
+    transform: translateY(-110vh);
   }
 }
 @-moz-keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -371,7 +387,7 @@ body {
 }
 @-webkit-keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -379,7 +395,7 @@ body {
 }
 @-o-keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -387,7 +403,7 @@ body {
 }
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0.2;
   }
   to {
     opacity: 1;

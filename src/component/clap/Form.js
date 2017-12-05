@@ -9,17 +9,27 @@ import Effect from './Effect';
 import firebaseDbh from '../fire'
 
 //Import Images
-import poop from '../../img/emoties/poop.png'
+import amen from '../../img/emoties/amen.png'
+import celebrate from '../../img/emoties/celebrate.png'
+import clap from '../../img/emoties/clap.png'
+import heart from '../../img/emoties/wonder.png'
 import laugh from '../../img/emoties/laugh.png'
 import love from '../../img/emoties/love.png'
-import clap from '../../img/emoties/clap.png'
+import nerd from '../../img/emoties/heart.png'
+import noman from '../../img/emoties/clap.png'
+import poop from '../../img/emoties/poop.png'
 import wonder from '../../img/emoties/wonder.png'
 
 let emoticons = [
-  {name:'poop',img:poop},
+  {name:'amen',img:amen},
+  {name:'celebrate',img:celebrate},
+  {name:'clap',img:clap},
+  {name:'heart',img:heart},
   {name:'laugh',img:laugh},
   {name:'love',img:love},
-  {name:'clap',img:clap},
+  {name:'nerd',img:nerd},
+  {name:'noman',img:noman},
+  {name:'poop',img:poop},
   {name:'wonder',img:wonder}
 ]
 
@@ -64,28 +74,6 @@ class Form extends Component {
     this.setState({ width: window.innerWidth});
   }
 
-  handleOnClick = (e) => {
-    const target = e.target;
-    const name = target.name;
-    if(!this.state.transitionActive){
-      let effectImage = this.getEmoticonImage(name);
-
-      this.setState({
-        transitionActive: true,
-      }, () => stateCallBack());
-
-      const stateCallBack = () => {
-        this.state.dbref.push ({
-          icon: effectImage,
-          screenWidth: this.state.width
-        })
-
-        setTimeout(()=> {
-          this.setState({transitionActive: false})
-        }, 3000);
-      }
-    }
-  }
 
   getEmoticonImage(name){
     for (let index of emoticons){
@@ -101,11 +89,13 @@ class Form extends Component {
         <div className="effect-container">
           {
             this.state.effectsArray.map((effect, index) => {
+              console.log(effect)
               return(
               <Effect
                key={index}
                transitionActive={true}
                icon={effect.icon}
+               name={effect.name}
                screenWidth={effect.screenWidth}
               />
               )
