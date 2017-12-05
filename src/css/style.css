@@ -167,6 +167,75 @@ body {
 .axg-app .axg-view#questions-to-ask-ourselves.right-image >div:first-child {
   background: #fff;
 }
+.axg-app .axg-view#application-ui.right-image >div {
+  background-image: url("../img/dashboard.png");
+  background-position: left -40px;
+}
+.axg-app .axg-view#application-ui.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#building-abstractions.right-image >div {
+  background-image: url("../img/js.png");
+  background-position: center;
+}
+.axg-app .axg-view#building-abstractions.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#component-based-ui.right-image >div {
+  background-image: url("../img/constructions.jpeg");
+  background-position: center;
+}
+.axg-app .axg-view#component-based-ui.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#powerful-abstraction.right-image >div {
+  background-image: url("../img/power.jpg");
+  background-position: left;
+}
+.axg-app .axg-view#powerful-abstraction.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#proposed-application.right-image >div {
+  background-image: url("../img/codeless.jpeg");
+  background-position: center;
+}
+.axg-app .axg-view#proposed-application.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#cheap-talk {
+  background-image: url("../img/fullode.png");
+}
+.axg-app .axg-view#cheap-code {
+  background-image: url("../img/fullode.png");
+}
+.axg-app .axg-view#current-implementation.right-image >div {
+  background-image: url("../img/current-stack.jpg");
+  background-position: center;
+}
+.axg-app .axg-view#current-implementation.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#advantages.right-image >div {
+  background-image: url("../img/yey.jpeg");
+  background-position: 22% 10%;
+}
+.axg-app .axg-view#advantages.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#tech-benefits.right-image >div {
+  background-image: url("../img/happy.jpg");
+  background-position: center;
+}
+.axg-app .axg-view#tech-benefits.right-image >div:first-child {
+  background: #fff;
+}
+.axg-app .axg-view#lessons-learned.right-image >div {
+  background-image: url("../img/lessons.jpg");
+  background-position: center;
+}
+.axg-app .axg-view#lessons-learned.right-image >div:first-child {
+  background: #fff;
+}
 .axg-app .axg-view.two-column {
   display: flex;
   justify-content: center;
@@ -300,7 +369,7 @@ body {
 }
 .slider .progress-bar {
   background: #ef8035;
-  height: 20px;
+  height: 10px;
   width: 100%;
   display: block;
   position: relative;

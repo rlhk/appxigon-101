@@ -87,8 +87,7 @@
               "current-implementation",
               "advantages",
               "tech-benefits",
-              "lessons-learned",
-              "qna"
+              "lessons-learned"
             ]
           }
         },
@@ -123,8 +122,7 @@
               "current-implementation",
               "advantages",
               "tech-benefits",
-              "lessons-learned",
-              "qna"
+              "lessons-learned"
             ]
           }
         }
@@ -137,44 +135,6 @@
               "params": {
                 "name": "animate-in",
                 "timeout": 1000
-              }
-            }
-          },
-          {
-            "call": {
-              "uri": ".updateSlideProgress",
-              "params": {
-                "id": "footer.default.slider",
-                "views": [
-                  "slide-cover",
-                  "slide-speakers",
-                  "slide-current-project",
-                  "slide-intro",
-                  "slide-todays-topic",
-                  "technical-frameworks",
-                  "inventors-paradox",
-                  "gif-slide",
-                  "slide-one-column",
-                  "slide-abstraction-one",
-                  "slide-abstraction-two",
-                  "care-about-learning",
-                  "what-does-software-do",
-                  "values-of-business-software",
-                  "questions-to-ask-ourselves",
-                  "application-ui",
-                  "building-abstractions",
-                  "component-based-ui",
-                  "powerful-abstraction",
-                  "flattened-structure",
-                  "proposed-application",
-                  "cheap-talk",
-                  "cheap-code",
-                  "current-implementation",
-                  "advantages",
-                  "tech-benefits",
-                  "lessons-learned",
-                  "qna"
-                ]
               }
             }
           }
@@ -667,25 +627,11 @@
     "application-ui": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "What’s Application UI\n============\n"
-          }
-        }
-      ],
       "full-column": [
         {
           "config": {
@@ -695,7 +641,15 @@
         {
           "content": {
             "type": "display",
-            "content": "* UI is the communication of intents between the user(s) and the application worldview presented by application designer\n* Capture user intentions\n"
+            "content": "What’s Application UI\n============\n  * UI is the communication of intents between the user(s) and the application worldview presented by application designer\n  * Capture user intentions\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]
@@ -703,25 +657,11 @@
     "building-abstractions": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Different UI building abstractions\n============\n"
-          }
-        }
-      ],
       "full-column": [
         {
           "config": {
@@ -731,7 +671,15 @@
         {
           "content": {
             "type": "display",
-            "content": "* UI primitives\n* MVC\n* MVVM\n* Latest component based\n  * React, Angular, Vue, Ember, Elm etc...\n"
+            "content": "Different UI building abstractions\n============\n  * UI primitives\n  * MVC\n  * MVVM\n  * Latest component based\n    * React, Angular, Vue, Ember, Elm etc...\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]
@@ -739,25 +687,11 @@
     "component-based-ui": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Different UI building abstractions\n============\n"
-          }
-        }
-      ],
       "full-column": [
         {
           "config": {
@@ -767,7 +701,15 @@
         {
           "content": {
             "type": "display",
-            "content": "* The way to build\n* The issues\n* Solutions?\n"
+            "content": "Different UI building abstractions\n============\n  * The way to build\n  * The issues\n  * Solutions?\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]
@@ -775,25 +717,11 @@
     "powerful-abstraction": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Is there a more powerful abstraction?\n============\n"
-          }
-        }
-      ],
       "full-column": [
         {
           "config": {
@@ -803,7 +731,15 @@
         {
           "content": {
             "type": "display",
-            "content": "* Domain Specific Language (DSL) over technical plumbing\n* Declarative VS Logical\n* Functional VS Component\n* Focus on the problem domain, with much less irrelavant technical details\n* Decouple biz logic from code\n"
+            "content": "Is there a more powerful abstraction?\n============\n  * Domain Specific Language (DSL) over technical plumbing\n  * Declarative VS Logical\n  * Functional VS Component\n  * Focus on the problem domain, with much less irrelavant technical details\n  * Decouple biz logic from code\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]
@@ -834,22 +770,29 @@
     "proposed-application": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
+      "full-column": [
         {
           "config": {
-            "class": "header"
+            "class": "column"
           }
         },
         {
           "content": {
             "type": "display",
-            "content": "The Proposed Application DSL\n============\n* App\n* View\n  * Focused intent\n* Group\n  * Unit of concern\n* Item (Atomic concepts)\n  * Display\n  * Select\n  * Input\n  * Action\n  * Custom Item\n* Custom Functions\n"
+            "content": "The Proposed Application DSL\n============\n  * App\n  * View\n    * Focused intent\n  * Group\n    * Unit of concern\n  * Item (Atomic concepts)\n    * Display\n    * Select\n    * Input\n    * Action\n    * Custom Item\n  * Custom Functions\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]
@@ -903,117 +846,11 @@
     "current-implementation": {
       "config": {
         "layout": [
-          "header",
           "full-column",
-          "footer"
+          "sidepic"
         ],
-        "class": "full-column just-info"
+        "class": "two-column right-image"
       },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Current Implementation Tech stack\n=================\n  * Livescript\n  * React API\n  * Redux\n"
-          }
-        }
-      ]
-    },
-    "advantages": {
-      "config": {
-        "layout": [
-          "header",
-          "full-column",
-          "footer"
-        ],
-        "class": "full-column just-info"
-      },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Advantages\n=================\n  * App developers deliver direct business value\n  * By focusing on presentation/dumb components and styling\n  * Digestible App definition schema\n  * 10x less boilerplate/setup\n  * App UI schema is dynamic\n"
-          }
-        }
-      ]
-    },
-    "tech-benefits": {
-      "config": {
-        "layout": [
-          "header",
-          "full-column",
-          "footer"
-        ],
-        "class": "full-column just-info"
-      },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Incidental Technical Benefits\n=================\n  * Redux is automated away\n  * Clean and flat state structure\n  * Full flexibility with custom components and custom functions\n  * Apollo experience: change single UI to multiple UI\n"
-          }
-        }
-      ]
-    },
-    "lessons-learned": {
-      "config": {
-        "layout": [
-          "header",
-          "full-column",
-          "footer"
-        ],
-        "class": "full-column just-info"
-      },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Lessons learned\n=================\n  * Vision is vital\n  * Flatten nested structure\n  * Trust the library\n  * Always doubt your own judgement\n  * Be open minded\n  * Avoid data mutability\n  * Breaking backward compatibility is unavoidable\n  * Minimum external dependency\n"
-          }
-        }
-      ]
-    },
-    "qna": {
-      "config": {
-        "layout": [
-          "header",
-          "full-column",
-          "footer"
-        ],
-        "class": "full-column just-info"
-      },
-      "header": [
-        {
-          "config": {
-            "class": "header"
-          }
-        },
-        {
-          "content": {
-            "type": "display",
-            "content": "Questions ?\n============\n"
-          }
-        }
-      ],
       "full-column": [
         {
           "config": {
@@ -1023,7 +860,105 @@
         {
           "content": {
             "type": "display",
-            "content": "\n"
+            "content": "Current Implementation Tech stack\n=================\n  * Livescript\n  * React API\n  * Redux\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
+          }
+        }
+      ]
+    },
+    "advantages": {
+      "config": {
+        "layout": [
+          "full-column",
+          "sidepic"
+        ],
+        "class": "two-column right-image"
+      },
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Advantages\n=================\n  * App developers deliver direct business value\n  * By focusing on presentation/dumb components and styling\n  * Digestible App definition schema\n  * 10x less boilerplate/setup\n  * App UI schema is dynamic\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
+          }
+        }
+      ]
+    },
+    "tech-benefits": {
+      "config": {
+        "layout": [
+          "full-column",
+          "sidepic"
+        ],
+        "class": "two-column right-image"
+      },
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Incidental Technical Benefits\n=================\n  * Redux is automated away\n  * Clean and flat state structure\n  * Full flexibility with custom components and custom functions\n  * Apollo experience: change single UI to multiple UI\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
+          }
+        }
+      ]
+    },
+    "lessons-learned": {
+      "config": {
+        "layout": [
+          "full-column",
+          "sidepic"
+        ],
+        "class": "two-column right-image"
+      },
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Lessons learned\n=================\n  * Vision is vital\n  * Flatten nested structure\n  * Trust the library\n  * Always doubt your own judgement\n  * Be open minded\n  * Avoid data mutability\n  * Breaking backward compatibility is unavoidable\n  * Minimum external dependency\n"
+          }
+        }
+      ],
+      "sidepic": [
+        {
+          "content": {
+            "type": "display",
+            "value": "div"
           }
         }
       ]

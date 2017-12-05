@@ -85,7 +85,6 @@ axg-101: # arbitary app-id
             - advantages
             - tech-benefits
             - lessons-learned
-            - qna
       ArrowLeft:
         uri: .nextView
         params:
@@ -118,7 +117,6 @@ axg-101: # arbitary app-id
             - advantages
             - tech-benefits
             - lessons-learned
-            - qna
     view: # configurations applicable to all views
           actions:
             - call:
@@ -126,40 +124,6 @@ axg-101: # arbitary app-id
                 params:
                   name: animate-in
                   timeout: 1000 # ms
-            - call:
-                uri: .updateSlideProgress
-                params:
-                  id: footer.default.slider
-                  views:
-                    - slide-cover
-                    - slide-speakers
-                    - slide-current-project
-                    - slide-intro
-                    - slide-todays-topic
-                    - technical-frameworks
-                    - inventors-paradox
-                    - gif-slide
-                    - slide-one-column
-                    - slide-abstraction-one
-                    - slide-abstraction-two
-                    - care-about-learning
-                    - what-does-software-do
-                    - values-of-business-software
-                    - questions-to-ask-ourselves
-                    - application-ui
-                    - building-abstractions
-                    - component-based-ui
-                    - powerful-abstraction
-                    - flattened-structure
-                    - proposed-application
-                    - cheap-talk
-                    - cheap-code
-                    - current-implementation
-                    - advantages
-                    - tech-benefits
-                    - lessons-learned
-                    - qna
-
   slide-cover: # view-id (arbitary)
     config: #view/config
       title: #view/config/attribute. Defaults to "Slide Cover" (from id)
@@ -518,91 +482,83 @@ axg-101: # arbitary app-id
 
   application-ui:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
+    full-column: # arbitary group-id
       - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
+          class: column
+      - content:
+          type: display
           content: |
             What’s Application UI
             ============
-    full-column: # arbitary group-id
-      - config:
-          class: column
+              * UI is the communication of intents between the user(s) and the application worldview presented by application designer
+              * Capture user intentions
+    sidepic: # arbitary group-id
       - content:
           type: display
-          content: |
-            * UI is the communication of intents between the user(s) and the application worldview presented by application designer
-            * Capture user intentions
+          value: div
   building-abstractions:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
-      - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
-          content: |
-            Different UI building abstractions
-            ============
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
     full-column: # arbitary group-id
       - config:
           class: column
       - content:
           type: display
           content: |
-            * UI primitives
-            * MVC
-            * MVVM
-            * Latest component based
-              * React, Angular, Vue, Ember, Elm etc...
+            Different UI building abstractions
+            ============
+              * UI primitives
+              * MVC
+              * MVVM
+              * Latest component based
+                * React, Angular, Vue, Ember, Elm etc...
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
   component-based-ui:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
-      - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
-          content: |
-            Different UI building abstractions
-            ============
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
     full-column: # arbitary group-id
       - config:
           class: column
       - content:
           type: display
           content: |
-            * The way to build
-            * The issues
-            * Solutions?
+            Different UI building abstractions
+            ============
+              * The way to build
+              * The issues
+              * Solutions?
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
   powerful-abstraction:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
+    full-column: # arbitary group-id
       - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
+          class: column
+      - content:
+          type: display
           content: |
             Is there a more powerful abstraction?
             ============
-    full-column: # arbitary group-id
-      - config:
-          class: column
+              * Domain Specific Language (DSL) over technical plumbing
+              * Declarative VS Logical
+              * Functional VS Component
+              * Focus on the problem domain, with much less irrelavant technical details
+              * Decouple biz logic from code
+    sidepic: # arbitary group-id
       - content:
           type: display
-          content: |
-            * Domain Specific Language (DSL) over technical plumbing
-            * Declarative VS Logical
-            * Functional VS Component
-            * Focus on the problem domain, with much less irrelavant technical details
-            * Decouple biz logic from code
+          value: div
   flattened-structure:
     config: #view/config
       layout: [ header, full-column, footer ]
@@ -617,28 +573,32 @@ axg-101: # arbitary app-id
             ============
   proposed-application:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
+    full-column: # arbitary group-id
       - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
+          class: column
+      - content:
+          type: display
           content: |
             The Proposed Application DSL
             ============
-            * App
-            * View
-              * Focused intent
-            * Group
-              * Unit of concern
-            * Item (Atomic concepts)
-              * Display
-              * Select
-              * Input
-              * Action
-              * Custom Item
-            * Custom Functions
+              * App
+              * View
+                * Focused intent
+              * Group
+                * Unit of concern
+              * Item (Atomic concepts)
+                * Display
+                * Select
+                * Input
+                * Action
+                * Custom Item
+              * Custom Functions
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
   cheap-talk:
     config: #view/config
       layout: [ header, full-column, footer ]
@@ -665,28 +625,32 @@ axg-101: # arbitary app-id
             =================
   current-implementation:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
+    full-column: # arbitary group-id
       - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
+          class: column
+      - content:
+          type: display
           content: |
             Current Implementation Tech stack
             =================
               * Livescript
               * React API
               * Redux
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
   advantages:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
+    full-column: # arbitary group-id
       - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
+          class: column
+      - content:
+          type: display
           content: |
             Advantages
             =================
@@ -695,15 +659,19 @@ axg-101: # arbitary app-id
               * Digestible App definition schema
               * 10x less boilerplate/setup
               * App UI schema is dynamic
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
   tech-benefits:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
+    full-column: # arbitary group-id
       - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
+          class: column
+      - content:
+          type: display
           content: |
             Incidental Technical Benefits
             =================
@@ -711,15 +679,19 @@ axg-101: # arbitary app-id
               * Clean and flat state structure
               * Full flexibility with custom components and custom functions
               * Apollo experience: change single UI to multiple UI
+    sidepic: # arbitary group-id
+      - content:
+          type: display
+          value: div
   lessons-learned:
     config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
+      layout: [ full-column, sidepic ]
+      class: two-column right-image
+    full-column: # arbitary group-id
       - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
+          class: column
+      - content:
+          type: display
           content: |
             Lessons learned
             =================
@@ -731,26 +703,11 @@ axg-101: # arbitary app-id
               * Avoid data mutability
               * Breaking backward compatibility is unavoidable
               * Minimum external dependency
-
-  qna:
-    config: #view/config
-      layout: [ header, full-column, footer ]
-      class: full-column just-info
-    header: # arbitary group-idclass: header
-      - config:
-          class: header
-      - content: #appxigon item-id
-          type: display #appxigon item-type/sub-type
-          content: |
-            Questions ?
-            ============
-    full-column: # arbitary group-id
-      - config:
-          class: column
+    sidepic: # arbitary group-id
       - content:
           type: display
-          content: |
-
+          value: div
+          
   feedback: # view-id
     config: #view/config
       title: #view/config/attribute
