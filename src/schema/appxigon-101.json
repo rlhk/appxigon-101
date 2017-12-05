@@ -34,7 +34,25 @@
               "technical-frameworks",
               "inventors-paradox",
               "gif-slide",
-              "slide-one-column"
+              "slide-one-column",
+              "slide-abstraction-one",
+              "slide-abstraction-two",
+              "care-about-learning",
+              "what-does-software-do",
+              "values-of-business-software",
+              "questions-to-ask-ourselves",
+              "application-ui",
+              "building-abstractions",
+              "component-based-ui",
+              "powerful-abstraction",
+              "flattened-structure",
+              "proposed-application",
+              "cheap-talk",
+              "cheap-code",
+              "current-implementation",
+              "advantages",
+              "tech-benefits",
+              "lessons-learned"
             ]
           }
         },
@@ -51,7 +69,25 @@
               "technical-frameworks",
               "inventors-paradox",
               "gif-slide",
-              "slide-one-column"
+              "slide-one-column",
+              "slide-abstraction-one",
+              "slide-abstraction-two",
+              "care-about-learning",
+              "what-does-software-do",
+              "values-of-business-software",
+              "questions-to-ask-ourselves",
+              "application-ui",
+              "building-abstractions",
+              "component-based-ui",
+              "powerful-abstraction",
+              "flattened-structure",
+              "proposed-application",
+              "cheap-talk",
+              "cheap-code",
+              "current-implementation",
+              "advantages",
+              "tech-benefits",
+              "lessons-learned"
             ]
           }
         },
@@ -68,7 +104,25 @@
               "technical-frameworks",
               "inventors-paradox",
               "gif-slide",
-              "slide-one-column"
+              "slide-one-column",
+              "slide-abstraction-one",
+              "slide-abstraction-two",
+              "care-about-learning",
+              "what-does-software-do",
+              "values-of-business-software",
+              "questions-to-ask-ourselves",
+              "application-ui",
+              "building-abstractions",
+              "component-based-ui",
+              "powerful-abstraction",
+              "flattened-structure",
+              "proposed-application",
+              "cheap-talk",
+              "cheap-code",
+              "current-implementation",
+              "advantages",
+              "tech-benefits",
+              "lessons-learned"
             ]
           }
         }
@@ -157,7 +211,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Our current project:\n============\nDisruptive SaaS Business Information System\n----------\n  * REA (Accounting)\n  * DMS\n\nCool Technical Stack\n----------\n  * Clojure (server)\n  * ClojureScript (client)\n  * Datomic (Database)\n\nWe are hiring!\n----------\n  * Are you a dynamic self starter?\n  * Join us now!\n"
+            "content": "Our current project:\n============\nDisruptive SaaS Business Information System\n----------\n  * Based on REA business theory\n  * DMS\n\nCool Tech Stack\n----------\n  * Clojure (Server)\n  * ClojureScript (Client)\n  * Datomic (Database)\n\nWe are hiring!\n----------\n  * Are you a dynamic self starter?\n  * Join us now!\n"
           }
         }
       ],
@@ -182,7 +236,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Scope:\n============\n  * General application\n  * Front end / UI\n\nWhat to expect?\n============\n  * Ideas, probably new\n  * Technical implementation detail sharing and discussion\n  * A bit high level principles if technical detail is too much\n  * Some fun\n"
+            "content": "Tonight’s Context\n============\n  * General business application\n  * Front end / UI\n  * But … the big ideas are universal\n\nCoverage\n============\n  * Paradoxes, principles & ideas\n  * Demo\n  * Technical implementation detail\n  * Relax and some fun\n"
           }
         }
       ],
@@ -214,7 +268,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Less is more\n============\n"
+            "content": "Less Is More: Beyond Technical Frameworks\n============\n"
           }
         }
       ],
@@ -227,7 +281,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Less\n============\n  * Our problems today\n  * Boilerplate, code wiring\n  * Repetition (DRY)\n  * Works that machine can do better than us\n  * Technical work\n"
+            "content": "Less\n============\n  * Boilerplate, Code wiring, Spaghetti code\n  * Works that machine can do better than us\n  * Manual work\n  * Incidental complexity\n"
           }
         }
       ],
@@ -240,7 +294,7 @@
         {
           "content": {
             "type": "display",
-            "content": "More\n============\n  * The approach we are proposing\n  * Achieve more projects\n  * Time to think\n  * Declarative work (Let the machine fulfil our wishes)\n  * Time to think about AGI\n"
+            "content": "More\n============\n  * Business value\n  * Declarative work (Let the machines be our slave)\n  * Time (to think)\n"
           }
         }
       ],
@@ -253,7 +307,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Beyond: The whole point of doing less while achieving more\n============\n"
+            "content": "Beyond: We are destined to go higher level\n============\n"
           }
         }
       ]
@@ -278,7 +332,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Technical Frameworks:\n============\n  * Technical VS Business Application / Problem Domain\n  * Framework: FRAMED to Work in certain way\n  * No matter which framework / library you work, your logic is always wired in source codes, so tightly!\n\nThis talk:\n============\n* We focus on the client side of general business applications, which is what we work on most of the time. However the big ideas are universal\n* The higher level are we, we generalize more\n"
+            "content": "Technical Frameworks:\n============\n  * Technical VS Business Application / Problem Domain\n  * Framework: FRAMED to Work in certain way\n  * No matter which framework / library you work, your logic is always wired in source codes, so tightly!\n"
           }
         }
       ]
@@ -333,7 +387,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Less is more\n============\n"
+            "content": "How do we learn\n============\n"
           }
         }
       ],
@@ -346,7 +400,93 @@
         {
           "content": {
             "type": "display",
-            "content": "Less\n============\n  * Our problems today\n  * Boilerplate, code wiring\n  * Repetition (DRY)\n  * Works that machine can do better than us\n  * Technical work\n  * The approach we are proposing\n  * Achieve more projects\n  * Time to think\n  * Declarative work (Let the machine fulfil our wishes)\n  * Time to think about AGI\n"
+            "content": "* The mind takes a long time to sort out unfamiliar complex details\n* But we are able to handle them much faster at higher level\n* We use guiding principles in the form of mnemonics, tricks and formulas to reduce the complexity\n\nExamples of learning:\n============\n  * Painting (Structure by simple shapes, perspective)\n  * Martial Art (Coordinate the body under pressure)\n  * Accounting (DEAD CLIC)\n"
+          }
+        }
+      ]
+    },
+    "slide-abstraction-one": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Examples of Abstraction Levels\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Problem: Travel from point A to B\n----------\n  * Walk\n  * Run\n  * Bike\n  * Motor Bike\n  * Car\n  * Car with driver\n  * Train\n  * Reducing away the problem: Do you really need to travel?\n"
+          }
+        }
+      ]
+    },
+    "slide-abstraction-two": {
+      "config": {
+        "layout": [
+          "header",
+          "left",
+          "right",
+          "footer"
+        ],
+        "class": "two-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Examples of Abstraction Levels Continued\n============\n"
+          }
+        }
+      ],
+      "left": [
+        {
+          "config": {
+            "class": "column left-column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Database Types\n============\n  * RDBMS\n    * Tables, joins, ORMs\n  * NOSQL DB\n    * freedom to create\n    * but hard to escape from created structure\n    * Can you escape from ORMs?\n"
+          }
+        }
+      ],
+      "right": [
+        {
+          "config": {
+            "class": "column right-column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "...\n============\n  * Graph Database\n    * Good for representing relationships\n    * What about data that’s not good to represent in nodes and edges?\n  * Multi-Model DB\n    * data are still bound to different models\n"
           }
         }
       ],
@@ -359,7 +499,479 @@
         {
           "content": {
             "type": "display",
-            "content": "Beyond: The whole point of doing less while achieving more\n============\n"
+            "content": "Does an universal DB exist? Take a look at Datomic\n===========\n"
+          }
+        }
+      ]
+    },
+    "care-about-learning": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "What do we care about learning?\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "* Software Development is a learning process\n  * Problem domains\n  * Technical solutions\n* Most of the biggest problems in software are problems of misconception\n* Software Developer’s Life Cycle\n  * Waves of technical frameworks\n  * Repeating the same business value in different frameworks\n  * Most got lost on why learning forever\n  * Until exit from technical role\n"
+          }
+        }
+      ]
+    },
+    "what-does-software-do": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "What does software application do?\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "* Everything is data\n* Managing data flow\n"
+          }
+        }
+      ]
+    },
+    "values-of-business-software": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "What are the values of applications?\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "* Handle business and aesthetic requirements\n* E.g. How fast can we:\n  * Build AB testing\n  * Building new features and functions\n"
+          }
+        }
+      ]
+    },
+    "questions-to-ask-ourselves": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Some questions to ask ourselves\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "* What degree of freedom can the software architecture provide to the business?\n* Do we really need an army of developers, to work on technical details?\n* Should there be a role like application builder?\n* Should developers be proud of being able to handling complexity over and over again?\n"
+          }
+        }
+      ]
+    },
+    "application-ui": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "What’s Application UI\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "* UI is the communication of intents between the user(s) and the application worldview presented by application designer\n* Capture user intentions\n"
+          }
+        }
+      ]
+    },
+    "building-abstractions": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Different UI building abstractions\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "* UI primitives\n* MVC\n* MVVM\n* Latest component based\n  * React, Angular, Vue, Ember, Elm etc...\n"
+          }
+        }
+      ]
+    },
+    "component-based-ui": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Different UI building abstractions\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "* The way to build\n* The issues\n* Solutions?\n"
+          }
+        }
+      ]
+    },
+    "powerful-abstraction": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Is there a more powerful abstraction?\n============\n"
+          }
+        }
+      ],
+      "full-column": [
+        {
+          "config": {
+            "class": "column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "* Domain Specific Language (DSL) over technical plumbing\n* Declarative VS Logical\n* Functional VS Component\n* Focus on the problem domain, with much less irrelavant technical details\n* Decouple biz logic from code\n"
+          }
+        }
+      ]
+    },
+    "flattened-structure": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "A flattened / normalized / simplified / reduced structure\n============\n"
+          }
+        }
+      ]
+    },
+    "proposed-application": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "The Proposed Application DSL\n============\n* App\n* View\n  * Focused intent\n* Group\n  * Unit of concern\n* Item (Atomic concepts)\n  * Display\n  * Select\n  * Input\n  * Action\n  * Custom Item\n* Custom Functions\n"
+          }
+        }
+      ]
+    },
+    "cheap-talk": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Talk is cheap. Let’s see the code\n=================\n"
+          }
+        }
+      ]
+    },
+    "cheap-code": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Code is cheap. Let’s see the demo\n=================\n"
+          }
+        }
+      ]
+    },
+    "current-implementation": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Current Implementation Tech stack\n=================\n  * Livescript\n  * React API\n  * Redux\n"
+          }
+        }
+      ]
+    },
+    "advantages": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Advantages\n=================\n  * App developers deliver direct business value\n  * By focusing on presentation/dumb components and styling\n  * Digestible App definition schema\n  * 10x less boilerplate/setup\n  * App UI schema is dynamic\n"
+          }
+        }
+      ]
+    },
+    "tech-benefits": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Incidental Technical Benefits\n=================\n  * Redux is automated away\n  * Clean and flat state structure\n  * Full flexibility with custom components and custom functions\n  * Apollo experience: change single UI to multiple UI\n"
+          }
+        }
+      ]
+    },
+    "lessons-learned": {
+      "config": {
+        "layout": [
+          "header",
+          "full-column",
+          "footer"
+        ],
+        "class": "full-column just-info"
+      },
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Lessons learned\n=================\n  * Vision is vital\n  * Flatten nested structure\n  * Trust the library\n  * Always doubt your own judgement\n  * Be open minded\n  * Avoid data mutability\n  * Breaking backward compatibility is unavoidable\n  * Minimum external dependency\n"
           }
         }
       ]

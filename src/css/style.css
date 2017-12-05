@@ -317,7 +317,7 @@ body {
   animation-name: fadeOut;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
   background-size: cover;
 }
 .animate-in {
@@ -344,7 +344,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(-110vh);
+    transform: translateY(-60vh);
   }
 }
 @-webkit-keyframes fadeOut {
@@ -354,7 +354,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(-110vh);
+    transform: translateY(-60vh);
   }
 }
 @-o-keyframes fadeOut {
@@ -364,7 +364,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(-110vh);
+    transform: translateY(-60vh);
   }
 }
 @keyframes fadeOut {
@@ -374,7 +374,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translateY(-110vh);
+    transform: translateY(-60vh);
   }
 }
 @-moz-keyframes fadeIn {

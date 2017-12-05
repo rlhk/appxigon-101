@@ -35,6 +35,24 @@ axg-101: # arbitary app-id
             - inventors-paradox
             - gif-slide
             - slide-one-column
+            - slide-abstraction-one
+            - slide-abstraction-two
+            - care-about-learning
+            - what-does-software-do
+            - values-of-business-software
+            - questions-to-ask-ourselves
+            - application-ui
+            - building-abstractions
+            - component-based-ui
+            - powerful-abstraction
+            - flattened-structure
+            - proposed-application
+            - cheap-talk
+            - cheap-code
+            - current-implementation
+            - advantages
+            - tech-benefits
+            - lessons-learned
       ArrowRight: # standard DOM key name
         uri: .nextView
         params:
@@ -49,6 +67,24 @@ axg-101: # arbitary app-id
             - inventors-paradox
             - gif-slide
             - slide-one-column
+            - slide-abstraction-one
+            - slide-abstraction-two
+            - care-about-learning
+            - what-does-software-do
+            - values-of-business-software
+            - questions-to-ask-ourselves
+            - application-ui
+            - building-abstractions
+            - component-based-ui
+            - powerful-abstraction
+            - flattened-structure
+            - proposed-application
+            - cheap-talk
+            - cheap-code
+            - current-implementation
+            - advantages
+            - tech-benefits
+            - lessons-learned
       ArrowLeft:
         uri: .nextView
         params:
@@ -63,6 +99,24 @@ axg-101: # arbitary app-id
             - inventors-paradox
             - gif-slide
             - slide-one-column
+            - slide-abstraction-one
+            - slide-abstraction-two
+            - care-about-learning
+            - what-does-software-do
+            - values-of-business-software
+            - questions-to-ask-ourselves
+            - application-ui
+            - building-abstractions
+            - component-based-ui
+            - powerful-abstraction
+            - flattened-structure
+            - proposed-application
+            - cheap-talk
+            - cheap-code
+            - current-implementation
+            - advantages
+            - tech-benefits
+            - lessons-learned
     view: # configurations applicable to all views
           actions:
             - call:
@@ -115,13 +169,13 @@ axg-101: # arbitary app-id
             ============
             Disruptive SaaS Business Information System
             ----------
-              * REA (Accounting)
+              * Based on REA business theory
               * DMS
 
-            Cool Technical Stack
+            Cool Tech Stack
             ----------
-              * Clojure (server)
-              * ClojureScript (client)
+              * Clojure (Server)
+              * ClojureScript (Client)
               * Datomic (Database)
 
             We are hiring!
@@ -140,17 +194,19 @@ axg-101: # arbitary app-id
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
-            Scope:
+            Tonight’s Context
             ============
-              * General application
+              * General business application
               * Front end / UI
+              * But … the big ideas are universal
 
-            What to expect?
+            Coverage
             ============
-              * Ideas, probably new
-              * Technical implementation detail sharing and discussion
-              * A bit high level principles if technical detail is too much
-              * Some fun
+              * Paradoxes, principles & ideas
+              * Demo
+              * Technical implementation detail
+              * Relax and some fun
+
     sidepic: # arbitary group-id
       - content:
           type: display
@@ -165,9 +221,8 @@ axg-101: # arbitary app-id
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
-            Less is more
+            Less Is More: Beyond Technical Frameworks
             ============
-
     left: # arbitary group-id
       - config:
           class: column left-column
@@ -176,12 +231,10 @@ axg-101: # arbitary app-id
           content: |
             Less
             ============
-              * Our problems today
-              * Boilerplate, code wiring
-              * Repetition (DRY)
+              * Boilerplate, Code wiring, Spaghetti code
               * Works that machine can do better than us
-              * Technical work
-
+              * Manual work
+              * Incidental complexity
     right: # arbitary group-id
       - config:
           class: column right-column
@@ -190,11 +243,9 @@ axg-101: # arbitary app-id
           content: |
             More
             ============
-              * The approach we are proposing
-              * Achieve more projects
-              * Time to think
-              * Declarative work (Let the machine fulfil our wishes)
-              * Time to think about AGI
+              * Business value
+              * Declarative work (Let the machines be our slave)
+              * Time (to think)
 
     footer: # arbitary group-idclass: header
       - config:
@@ -202,7 +253,7 @@ axg-101: # arbitary app-id
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
-            Beyond: The whole point of doing less while achieving more
+            Beyond: We are destined to go higher level
             ============
   technical-frameworks:
     config: #view/config
@@ -222,10 +273,6 @@ axg-101: # arbitary app-id
               * Framework: FRAMED to Work in certain way
               * No matter which framework / library you work, your logic is always wired in source codes, so tightly!
 
-            This talk:
-            ============
-            * We focus on the client side of general business applications, which is what we work on most of the time. However the big ideas are universal
-            * The higher level are we, we generalize more
   inventors-paradox:
     config: #view/config
       layout: [ quote ]
@@ -255,7 +302,7 @@ axg-101: # arbitary app-id
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
-            Less is more
+            How do we learn
             ============
     full-column: # arbitary group-id
       - config:
@@ -263,27 +310,398 @@ axg-101: # arbitary app-id
       - content:
           type: display
           content: |
-            Less
-            ============
-              * Our problems today
-              * Boilerplate, code wiring
-              * Repetition (DRY)
-              * Works that machine can do better than us
-              * Technical work
-              * The approach we are proposing
-              * Achieve more projects
-              * Time to think
-              * Declarative work (Let the machine fulfil our wishes)
-              * Time to think about AGI
+              * The mind takes a long time to sort out unfamiliar complex details
+              * But we are able to handle them much faster at higher level
+              * We use guiding principles in the form of mnemonics, tricks and formulas to reduce the complexity
 
+              Examples of learning:
+              ============
+                * Painting (Structure by simple shapes, perspective)
+                * Martial Art (Coordinate the body under pressure)
+                * Accounting (DEAD CLIC)
+  slide-abstraction-one:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Examples of Abstraction Levels
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+              Problem: Travel from point A to B
+              ----------
+                * Walk
+                * Run
+                * Bike
+                * Motor Bike
+                * Car
+                * Car with driver
+                * Train
+                * Reducing away the problem: Do you really need to travel?
+  slide-abstraction-two:
+    config: #view/config
+      layout: [ header, left, right, footer ]
+      class: two-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Examples of Abstraction Levels Continued
+            ============
+    left: # arbitary group-id
+      - config:
+          class: column left-column
+      - content:
+          type: display
+          content: |
+            Database Types
+            ============
+              * RDBMS
+                * Tables, joins, ORMs
+              * NOSQL DB
+                * freedom to create
+                * but hard to escape from created structure
+                * Can you escape from ORMs?
+
+    right: # arbitary group-id
+      - config:
+          class: column right-column
+      - content:
+          type: display
+          content: |
+            ...
+            ============
+              * Graph Database
+                * Good for representing relationships
+                * What about data that’s not good to represent in nodes and edges?
+              * Multi-Model DB
+                * data are still bound to different models
     footer: # arbitary group-idclass: header
       - config:
           class: footer
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
-            Beyond: The whole point of doing less while achieving more
+            Does an universal DB exist? Take a look at Datomic
+            ===========
+  care-about-learning:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            What do we care about learning?
             ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+            * Software Development is a learning process
+              * Problem domains
+              * Technical solutions
+            * Most of the biggest problems in software are problems of misconception
+            * Software Developer’s Life Cycle
+              * Waves of technical frameworks
+              * Repeating the same business value in different frameworks
+              * Most got lost on why learning forever
+              * Until exit from technical role
+  what-does-software-do:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            What does software application do?
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+            * Everything is data
+            * Managing data flow
+  values-of-business-software:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            What are the values of applications?
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+            * Handle business and aesthetic requirements
+            * E.g. How fast can we:
+              * Build AB testing
+              * Building new features and functions
+  questions-to-ask-ourselves:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Some questions to ask ourselves
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+            * What degree of freedom can the software architecture provide to the business?
+            * Do we really need an army of developers, to work on technical details?
+            * Should there be a role like application builder?
+            * Should developers be proud of being able to handling complexity over and over again?
+  application-ui:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            What’s Application UI
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+            * UI is the communication of intents between the user(s) and the application worldview presented by application designer
+            * Capture user intentions
+  building-abstractions:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Different UI building abstractions
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+            * UI primitives
+            * MVC
+            * MVVM
+            * Latest component based
+              * React, Angular, Vue, Ember, Elm etc...
+  component-based-ui:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Different UI building abstractions
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+            * The way to build
+            * The issues
+            * Solutions?
+  powerful-abstraction:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Is there a more powerful abstraction?
+            ============
+    full-column: # arbitary group-id
+      - config:
+          class: column
+      - content:
+          type: display
+          content: |
+            * Domain Specific Language (DSL) over technical plumbing
+            * Declarative VS Logical
+            * Functional VS Component
+            * Focus on the problem domain, with much less irrelavant technical details
+            * Decouple biz logic from code
+  flattened-structure:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            A flattened / normalized / simplified / reduced structure
+            ============
+  proposed-application:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            The Proposed Application DSL
+            ============
+            * App
+            * View
+              * Focused intent
+            * Group
+              * Unit of concern
+            * Item (Atomic concepts)
+              * Display
+              * Select
+              * Input
+              * Action
+              * Custom Item
+            * Custom Functions
+  cheap-talk:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Talk is cheap. Let’s see the code
+            =================
+  cheap-code:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Code is cheap. Let’s see the demo
+            =================
+  current-implementation:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Current Implementation Tech stack
+            =================
+              * Livescript
+              * React API
+              * Redux
+  advantages:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Advantages
+            =================
+              * App developers deliver direct business value
+              * By focusing on presentation/dumb components and styling
+              * Digestible App definition schema
+              * 10x less boilerplate/setup
+              * App UI schema is dynamic
+  tech-benefits:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Incidental Technical Benefits
+            =================
+              * Redux is automated away
+              * Clean and flat state structure
+              * Full flexibility with custom components and custom functions
+              * Apollo experience: change single UI to multiple UI
+  lessons-learned:
+    config: #view/config
+      layout: [ header, full-column, footer ]
+      class: full-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
+      - content: #appxigon item-id
+          type: display #appxigon item-type/sub-type
+          content: |
+            Lessons learned
+            =================
+              * Vision is vital
+              * Flatten nested structure
+              * Trust the library
+              * Always doubt your own judgement
+              * Be open minded
+              * Avoid data mutability
+              * Breaking backward compatibility is unavoidable
+              * Minimum external dependency
+
   slide-intro-less-is-more:
 
   slide-problem:

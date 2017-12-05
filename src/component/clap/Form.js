@@ -74,7 +74,6 @@ class Form extends Component {
     this.setState({ width: window.innerWidth});
   }
 
-
   getEmoticonImage(name){
     for (let index of emoticons){
       if(index.name===name){
@@ -86,7 +85,7 @@ class Form extends Component {
   render() {
     return (
       <div className="main-container">
-        <div className="effect-container">
+        <div className="effect-container" id="effect-container">
           {
             this.state.effectsArray.map((effect, index) => {
               console.log(effect)
