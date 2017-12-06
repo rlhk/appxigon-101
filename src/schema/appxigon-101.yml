@@ -187,7 +187,6 @@ axg-101: # arbitary app-id
             Skilled in informatics, development and all things technology related, Siegfried is an online guru. He has delivered projects and consulted across a wide array of industries including Banking, Telecommunications, startups and many more. He believes in delivering scalable, sustainable and practical solutions using modern technology and practices.
 
             [Github](https://github.com/siegfriedgrimbeek) - [https://github.com/siegfriedgrimbeek](https://github.com/siegfriedgrimbeek)
-slide-speakers:
   slide-current-project:
     config: #view/config
       layout: [ main, sidepic ]

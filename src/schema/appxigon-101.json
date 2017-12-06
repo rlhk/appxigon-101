@@ -215,7 +215,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Roger LAM\n============\nWith 16 years of experience in software development, Roger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.\n\n[Github](https://github.com/rlhk) - [https://github.com/rlhk](https://github.com/rlhk)\n"
+            "content": "Roger LAM\n============\nRoger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.\n\n[Github](https://github.com/rlhk) - [https://github.com/rlhk](https://github.com/rlhk)\n"
           }
         }
       ],
@@ -232,9 +232,7 @@
           }
         }
       ]
-    }
-  },
-  "slide-speakers": {
+    },
     "slide-current-project": {
       "config": {
         "layout": [
