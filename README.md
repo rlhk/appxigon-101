@@ -1,4 +1,4 @@
-# appxigon-101
+# appxigon-101 (Work in progress)
 
 Interactive SPA presentation slides built with Appxigon: **Less is More, Beyond Technical Frameworks**
 
@@ -10,7 +10,7 @@ Interactive SPA presentation slides built with Appxigon: **Less is More, Beyond 
 - `Enter`/`ArrowRight`: Next slide
 - `ArrowLeft`: Previous slide
 
-Refer to `/src/schema/appxigon-101.yml` for the App schema. Including the definition of the said hotkeys
+Refer to `/src/schema/appxigon-101.yml` for the App schema. Including the definition of the said hotkeys.
 
 For custom functions: see `/src/appxigon-functions`
 
