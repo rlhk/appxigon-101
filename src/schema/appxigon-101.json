@@ -59,44 +59,7 @@
             ]
           }
         },
-        "ArrowRight": {
-          "uri": ".nextView",
-          "params": {
-            "step": 1,
-            "views": [
-              "slide-cover",
-              "slide-speakers",
-              "slide-current-project",
-              "slide-intro",
-              "slide-todays-topic",
-              "technical-frameworks",
-              "inventors-paradox",
-              "gif-slide",
-              "slide-one-column",
-              "slide-abstraction-one",
-              "slide-abstraction-two",
-              "care-about-learning",
-              "what-does-software-do",
-              "values-of-business-software",
-              "questions-to-ask-ourselves",
-              "application-ui",
-              "building-abstractions",
-              "component-based-ui-one",
-              "component-based-ui",
-              "powerful-abstraction",
-              "nested-structure",
-              "flattened-structure",
-              "proposed-application",
-              "cheap-talk",
-              "cheap-code",
-              "current-implementation",
-              "advantages",
-              "tech-benefits",
-              "lessons-learned",
-              "slide-questions"
-            ]
-          }
-        },
+        "ArrowRight": "Enter",
         "ArrowLeft": {
           "uri": ".nextView",
           "params": {
