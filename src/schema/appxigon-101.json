@@ -223,37 +223,55 @@
     "slide-speakers": {
       "config": {
         "layout": [
-          "main",
-          "footnote"
-        ]
+          "header",
+          "left",
+          "right",
+          "footer"
+        ],
+        "class": "two-column just-info"
       },
-      "main": [
+      "header": [
+        {
+          "config": {
+            "class": "header"
+          }
+        },
         {
           "content": {
             "type": "display",
             "content": "Who are we?\n============\n"
           }
+        }
+      ],
+      "left": [
+        {
+          "config": {
+            "class": "column left-column"
+          }
         },
         {
-          "speakers": {
-            "class": "speakers-list",
-            "type": "select/list",
-            "data": {
-              "default": [
-                {
-                  "value": "roger",
-                  "text": "Roger LAM"
-                },
-                {
-                  "value": "siegfried",
-                  "text": "Siegfried GRIMBEEK"
-                }
-              ]
-            }
+          "content": {
+            "type": "display",
+            "content": "Roger LAM\n============\nWith 16 years of experience in software development, Roger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.\n\n[Github](https://github.com/rlhk) - [https://github.com/rlhk](https://github.com/rlhk)\n"
+          }
+        }
+      ],
+      "right": [
+        {
+          "config": {
+            "class": "column right-column"
+          }
+        },
+        {
+          "content": {
+            "type": "display",
+            "content": "Siegfried GRIMBEEK\n============\nSkilled in informatics, development and all things technology related, Siegfried is an online guru. He has delivered projects and consulted across a wide array of industries including Banking, Telecommunications, startups and many more. He believes in delivering scalable, sustainable and practical solutions using modern technology and practices.\n\n[Github](https://github.com/siegfriedgrimbeek) - [https://github.com/siegfriedgrimbeek](https://github.com/siegfriedgrimbeek)\n"
           }
         }
       ]
-    },
+    }
+  },
+  "slide-speakers": {
     "slide-current-project": {
       "config": {
         "layout": [

@@ -189,22 +189,39 @@ axg-101: # arbitary app-id
             Beyond Technical Frameworks
   slide-speakers:
     config: #view/config
-      layout: [ main, footnote ]
-    main: # arbitary group-id
+      layout: [ header, left, right, footer ]
+      class: two-column just-info
+    header: # arbitary group-idclass: header
+      - config:
+          class: header
       - content: #appxigon item-id
           type: display #appxigon item-type/sub-type
           content: |
             Who are we?
             ============
-      - speakers:
-          class: speakers-list
-          type: select/list
-          data:
-            default:
-              - value: roger
-                text:  Roger LAM
-              - value: siegfried
-                text:  Siegfried GRIMBEEK
+    left: # arbitary group-id
+      - config:
+          class: column left-column
+      - content:
+          type: display
+          content: |
+            Roger LAM
+            ============
+            With 16 years of experience in software development, Roger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.
+
+            [Github](https://github.com/rlhk) - [https://github.com/rlhk](https://github.com/rlhk)
+    right: # arbitary group-id
+      - config:
+          class: column right-column
+      - content:
+          type: display
+          content: |
+            Siegfried GRIMBEEK
+            ============
+            Skilled in informatics, development and all things technology related, Siegfried is an online guru. He has delivered projects and consulted across a wide array of industries including Banking, Telecommunications, startups and many more. He believes in delivering scalable, sustainable and practical solutions using modern technology and practices.
+
+            [Github](https://github.com/siegfriedgrimbeek) - [https://github.com/siegfriedgrimbeek](https://github.com/siegfriedgrimbeek)
+slide-speakers:
   slide-current-project:
     config: #view/config
       layout: [ main, sidepic ]
@@ -254,7 +271,6 @@ axg-101: # arbitary app-id
               * Demo
               * Technical implementation detail
               * Relax and some fun
-
     sidepic: # arbitary group-id
       - content:
           type: display
