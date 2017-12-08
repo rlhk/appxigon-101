@@ -64,6 +64,9 @@ body {
   width: 100%;
   margin-top: 100px;
 }
+.axg-app .axg-view#slide-cover .axg-group .instructions h1 {
+  font-size: 20pt;
+}
 .axg-app .axg-view#slide-cover .axg-group h2 {
   margin-top: 0;
   font-size: 40px;
