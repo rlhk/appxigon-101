@@ -44,6 +44,7 @@ body {
   background-image: url("../img/introduction.png");
   background-size: cover;
   color: #fff;
+  flex-direction: column;
 }
 .axg-app .axg-view#slide-cover .axg-group {
   display: flex;
@@ -59,6 +60,10 @@ body {
   padding-right: 50px;
   margin-right: 50px;
 }
+.axg-app .axg-view#slide-cover .axg-group .instructions {
+  width: 100%;
+  margin-top: 100px;
+}
 .axg-app .axg-view#slide-cover .axg-group h2 {
   margin-top: 0;
   font-size: 40px;
@@ -69,6 +74,10 @@ body {
   margin-top: 0;
   font-size: 20px;
   text-transform: uppercase;
+}
+.axg-app .axg-view#slide-cover .axg-group ol li {
+  font-size: 14pt;
+  line-height: 30pt;
 }
 .axg-app .axg-view#slide-speakers {
   display: flex;

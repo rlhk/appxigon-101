@@ -10,11 +10,6 @@ constructor(props){
   }
 
   render() {
-    // setTimeout(function(){
-    //   let effectContainer = document.getElementById("effect-container");
-    //   let emojieEffect = document.getElementsByClassName("emoji-effect");
-    //   effectContainer.removeChild(emojieEffect[]);
-    // }, 3000);
 
     let icon = this.props.icon
     let screenWidth = this.props.screenWidth
@@ -22,7 +17,7 @@ constructor(props){
     let name = this.props.name
 
     let emotiWidth = screenWidth / 5;
-    let emotiCount = 10;
+    let emotiCount = 20;
     let emotiObjectArray = [];
 
     setTimeout

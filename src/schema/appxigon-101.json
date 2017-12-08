@@ -164,7 +164,7 @@
         "title": null,
         "layout": [
           "main",
-          "speakers"
+          "instructions"
         ]
       },
       "main": [
@@ -179,6 +179,15 @@
           "content": {
             "type": "display",
             "content": "Less is more\n============\nBeyond Technical Frameworks\n"
+          }
+        }
+      ],
+      "instructions": [
+        {
+          "content": {
+            "class": "instructions",
+            "type": "display",
+            "content": "Instructions\n============\n  1. Press the `Q` button to launch the QR code.\n  2. Scan the QR code to launch the Emoji App.\n  3. Use `Enter` / `ArrowRight`: Next Slide and  `ArrowLeft`: Previous Slide\n"
           }
         }
       ]
@@ -215,7 +224,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Roger LAM\n============\nRoger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.\n\n[Github](https://github.com/rlhk) - [https://github.com/rlhk](https://github.com/rlhk)\n"
+            "content": "Roger LAM\n============\nRoger believes the best work-life balance is to unify everything, then the mind is able to flow and figure out the best solution for a problem. By deep-diving into basic theories of a domain and paying attention to subtleties, Roger enjoys being able to create simple and effective technical solutions.\n\n[Github](https://github.com/rlhk) - [https://github.com/rlhk](https://github.com/rlhk)\n\n[LinkedIn](https://www.linkedin.com/in/xrlhk/) - [https://www.linkedin.com/in/xrlhk/](https://www.linkedin.com/in/xrlhk/)\n"
           }
         }
       ],
@@ -228,7 +237,7 @@
         {
           "content": {
             "type": "display",
-            "content": "Siegfried GRIMBEEK\n============\nSkilled in informatics, development and all things technology related, Siegfried is an online guru. He has delivered projects and consulted across a wide array of industries including Banking, Telecommunications, startups and many more. He believes in delivering scalable, sustainable and practical solutions using modern technology and practices.\n\n[Github](https://github.com/siegfriedgrimbeek) - [https://github.com/siegfriedgrimbeek](https://github.com/siegfriedgrimbeek)\n"
+            "content": "Siegfried GRIMBEEK\n============\nSkilled in informatics, development and all things technology related, Siegfried is an online guru. He has delivered projects and consulted across a wide array of industries including Banking, Telecommunications, startups and many more. He believes in delivering scalable, sustainable and practical solutions using modern technology and practices.\n\n[Github](https://github.com/siegfriedgrimbeek) - [https://github.com/siegfriedgrimbeek](https://github.com/siegfriedgrimbeek)\n\n[LinkedIn](https://www.linkedin.com/in/siegfriedgrimbeek/) - [https://www.linkedin.com/in/siegfriedgrimbeek/](https://www.linkedin.com/in/siegfriedgrimbeek/)\n"
           }
         }
       ]
