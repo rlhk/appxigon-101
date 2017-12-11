@@ -52,8 +52,8 @@ export function showGroupData(params, ctx) {
 
 // Go to next view
 export function nextView(params, ctx) {
-  let currentView = get(params, 'currentView')
-  let appId = get(params, 'appId')
+  let appId = get(ctx, 'appId')
+  let currentView = get(ctx, 'viewId')
   let views = get(params, 'views')
   let step = get(params, 'step')
   let nextView = currentView
@@ -83,7 +83,7 @@ export function transitClass(params, ctx) {
 
 export function updateSlideProgress(params, ctx) {
   let id = get(params, 'id')
-  let currentView = get(params, 'currentView')
+  let currentView = get(ctx, 'viewId')
   let views = get(params, 'views')
   let progress = views.indexOf(currentView) / (views.length - 1)
   if (id) {

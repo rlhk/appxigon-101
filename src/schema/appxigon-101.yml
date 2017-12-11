@@ -158,13 +158,10 @@ axg-101: # arbitary app-id
           class: instructions
           type: display #appxigon item-type/sub-type
           content: |
-            Instructions
-            ============
-              1. Press the `Q` button to launch the QR code.
-              2. Scan the QR code to launch the Emoji App.
-              3. Use `Enter` / `ArrowRight`: Next Slide and  `ArrowLeft`: Previous Slide
-
-
+            1. Press `q` / `Q` key to launch the QR code.
+            2. Scan the QR code to launch the Emoji App.
+            3. Press `Enter` / `ArrowRight` for next slide
+            4. Press `ArrowLeft` for previous slide
 
   slide-speakers:
     config: #view/config

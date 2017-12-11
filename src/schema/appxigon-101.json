@@ -187,7 +187,7 @@
           "content": {
             "class": "instructions",
             "type": "display",
-            "content": "Instructions\n============\n  1. Press the `Q` button to launch the QR code.\n  2. Scan the QR code to launch the Emoji App.\n  3. Use `Enter` / `ArrowRight`: Next Slide and  `ArrowLeft`: Previous Slide\n"
+            "content": "1. Press `q` / `Q` key to launch the QR code.\n2. Scan the QR code to launch the Emoji App.\n3. Press `Enter` / `ArrowRight` for next slide\n4. Press `ArrowLeft` for previous slide\n"
           }
         }
       ]
